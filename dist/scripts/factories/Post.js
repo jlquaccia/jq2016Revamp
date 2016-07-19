@@ -1,6 +1,6 @@
 (function() {
   function Post($resource) {
-    return $resource('http://localhost:4000/posts/:id.json', {}, {
+    return $resource('https://aqueous-lowlands-24334.herokuapp.com/posts/:id.json', {}, {
       show: { method: 'GET' },
       update: { method: 'PUT', params: { id: '@id' } },
       delete: { method: 'DELETE', params: { id: '@id' } }

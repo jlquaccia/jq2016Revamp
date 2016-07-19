@@ -8,7 +8,7 @@
         this.projects = Fixtures.getProjects();
 
         $scope.submitMessage = function() {
-            $.post('http://localhost:4000/', {inquiry: {name: $scope.name, email: $scope.email, phone_number: $scope.phone_number, message: $scope.message}});
+            $.post('https://aqueous-lowlands-24334.herokuapp.com', {inquiry: {name: $scope.name, email: $scope.email, phone_number: $scope.phone_number, message: $scope.message}});
 
             console.log('message sent');
 
