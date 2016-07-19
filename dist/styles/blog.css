@@ -263,6 +263,80 @@ h3.body-copy span {
 }
 
 /* ==================================================================== */
+/* Star Logo */
+/* ==================================================================== */
+.blog_header_wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 8em;
+}
+
+.blog_header_wrapper span {
+    text-shadow: -0.06em 0 gray, 0.06em 0 white;
+    letter-spacing: 0.08em;
+}
+
+.blog_stars span {
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 2s cubic-bezier(0,1,0,1);
+}
+
+.blog_stars span:nth-child(1),
+.blog_stars span:nth-child(5) {
+    font-size: 0.3em;
+    animation-delay: 0.2s;
+}
+
+.blog_stars span:nth-child(2),
+.blog_stars span:nth-child(4) {
+    font-size: 0.5em;
+    animation-delay: 0.1s;
+}
+
+.blog_stars span:nth-child(3) {
+    font-size: 0.8em;
+    animation-delay: 0s;
+}
+
+.blog_stars span {
+    animation: stars-animation 10s 50 ease-in-out;
+}
+
+.blog_title {
+    border: 2px solid gray;
+    padding: 5px 30px;
+}
+
+.blog_title span {
+    font-weight: 100;
+}
+
+@-webkit-keyframes stars-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(1);
+    }
+
+    95% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ==================================================================== */
 /* Parallax Header */
 /* ==================================================================== */
 * {
