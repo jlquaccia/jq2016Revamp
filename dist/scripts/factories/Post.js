@@ -11,3 +11,5 @@
     .module('jq2016Revamp')
     .factory('Post', ['$resource', Post]);
 })();
+
+// https://aqueous-lowlands-24334.herokuapp.com/posts/:id.json
