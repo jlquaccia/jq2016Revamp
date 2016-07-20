@@ -11,6 +11,7 @@
       }
 
       console.log(vm.post);
+      console.log(vm.post.image);
     };
 
     // Hamburger Icon Animation
