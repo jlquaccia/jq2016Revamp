@@ -8,7 +8,18 @@
     </div>
     
     <!--  Half-Tone Selfie  -->
-    <img src="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Selfies/eighteen.jpg" alt="" class="selfie_1 img-responsive">
+    <img src="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Selfies/eighteen.jpg" alt="Selfie" id="all_browsers_but_ff_selfie" class="selfie_1 img-responsive">
+    
+    <div id="firefox_selfie">
+        <svg height="250px" width="450px">
+            <defs>
+                <clipPath id="clipPath">
+                        <circle cx="230" cy="200" r="200" />
+                </clipPath>
+            </defs>
+            <image xlink:href="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Selfies/eighteen.jpg" width="450" height="253" style="clip-path: url(#clipPath);" class="selfie_1 img-responsive" />
+        </svg>
+    </div>
 </div>
 
 <!--  Projects Section  -->

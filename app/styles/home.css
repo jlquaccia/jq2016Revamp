@@ -691,6 +691,17 @@ section#contact {
     filter: grayscale(100%) brightness(175%);
 }
 
+#firefox_selfie {
+    position: absolute;
+    bottom: 0;
+    margin: -7px;
+    display: none;
+}
+
+#all_browsers_but_ff_selfie {
+  display: block;
+}
+
 /*---------------------------------------------------------*/
 /* Black and White Selfie 2 */
 /*---------------------------------------------------------*/
@@ -698,4 +709,33 @@ section#contact {
 .about_me_selfie {
     -webkit-filter: grayscale(100%) brightness(200%);
     filter: grayscale(100%) brightness(200%);
+}
+
+/*---------------------------------------------------------*/
+/* Cross Browser Compatibility */
+/*---------------------------------------------------------*/
+
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+    .selfie_1 {
+        width: 450px;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        -webkit-clip-path: circle(50% at 50% 75%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-filter: grayscale(100%) brightness(175%);
+        filter: grayscale(100%) brightness(175%);
+    }
+
+    #firefox_selfie {
+        position: absolute;
+        bottom: 0;
+        margin: -7px;
+        display: block;
+    }
+
+    #all_browsers_but_ff_selfie {
+      display: none;
+    }
 }
