@@ -470,8 +470,7 @@ h1.section_title {
 #contact form textarea,
 #contact form button {
     border-radius: 0;
-    background-color: #fff;
-    border: none;
+    border: none;*/
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -543,6 +542,39 @@ input.form-control.contact_phone {
 section#contact {
     overflow: hidden;
     height: 1000px;
+}
+
+.cf_input_focus:focus {
+  background-color: #FFE95C;
+  border: none;
+}
+
+.cf_btn:hover {
+  background-color: #FFE95C;
+}
+
+#contact_form .cf_btn:focus,
+#contact_form .cf_btn:active {
+  background-color: #FFE95C;
+  outline: none;
+}
+
+/*---------------------------------------------------------*/
+/* Contact Form Validation Classes */
+/*---------------------------------------------------------*/
+.cf_name_error {
+    position: absolute;
+    top: 162px;
+}
+
+.cf_email_error {
+    float: right;
+    position: relative;
+    right: 183px;
+}
+
+.cf_error .help-block {
+  color: #FFE95C;
 }
 
 /*---------------------------------------------------------*/

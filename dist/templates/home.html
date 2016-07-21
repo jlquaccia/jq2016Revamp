@@ -116,24 +116,31 @@
                     <h5>drop me a line..</h5>
                 </div>
 
-                <form ng-submit="submitMessage()">
-                    <div class="form-group">
-                        <input type="text" class="form-control contact_name" placeholder="Your name" ng-model="name">
-                        <input type="email" class="form-control contact_email" placeholder="Your email" ng-model="email">
+                <form ng-submit="submitMessage()" name="contactForm" novalidate id="contact_form">
+                    <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.name.$invalid}">
+                        <input type="text" name="name" class="form-control cf_input_focus contact_name" placeholder="Your name" ng-model="name" required ng-class="{'cf_input_error' : submitted && contactForm.name.$invalid}">
+                        <p ng-show="submitted && contactForm.name.$invalid" class="help-block cf_name_error">Name is required.</p>
+                    </div>
 
-                        <div style="clear:both;"></div>
+                    <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.email.$invalid}">
+                        <input type="email" name="email" class="form-control cf_input_focus contact_email" placeholder="Your email" ng-model="email" required ng-class="{'cf_input_error' : submitted && contactForm.email.$invalid}">
+                        <p ng-show="submitted && contactForm.email.$invalid" class="help-block cf_email_error">Email is required.</p>
+                    </div>
+
+                    <div style="clear:both;"></div>
+
+                    <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.phone_number.$invalid}">
+                        <input type="tel" name="phone_number" class="form-control cf_input_focus contact_phone" placeholder="Your phone number" ng-model="phone_number" required ng-class="{'cf_input_error' : submitted && contactForm.phone_number.$invalid}">
+                        <p ng-show="submitted && contactForm.phone_number.$invalid" class="help-block">Phone number is required.</p>
+                    </div>
+
+                    <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.message.$invalid}">
+                        <textarea class="form-control cf_input_focus" name="message" placeholder="Your message" cols="40" rows="10" ng-model="message" required ng-class="{'cf_input_error' : submitted && contactForm.message.$invalid}"></textarea>
+                        <p ng-show="submitted && contactForm.message.$invalid" class="help-block">Message is required.</p>
                     </div>
 
                     <div class="form-group">
-                        <input type="tel" class="form-control contact_phone" placeholder="Your phone number" ng-model="phone_number">
-                    </div>
-
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Your message" cols="40" rows="10" ng-model="message"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <button class="btn btn-default" type="submit">Submit</button>
+                        <button class="btn btn-default cf_btn" type="submit" ng-click="submitted=true">Submit</button>
                     </div>
                 </form>
             </div>
