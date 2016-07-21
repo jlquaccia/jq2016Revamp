@@ -24,9 +24,8 @@
     <section id="blog_posts" class="blog_section">
       <div class="posts_wrapper" ng-repeat="post in posts | orderBy:'-created_at'">
         <div class="module module-full featured-store">
-          <a class="store-image" data-nagios-track="" href="http://windingwheelsupply.com/" target="_blank">
-            <img class="mobile-image" data-src="https://bigcartel-site.imgix.net/images/examples/windingwheel_mobile-7701c341.jpg?auto=format" src="http://images.mentalfloss.com/sites/default/files/pulpfiction.jpeg">
-            <img class="desktop-image" data-src="https://bigcartel-site.imgix.net/images/examples/windingwheel_desktop-dbc8462b.jpg?auto=format" src="http://images.mentalfloss.com/sites/default/files/pulpfiction.jpeg">
+          <a class="store-image" data-nagios-track="" ui-sref="edit({id: post.id})">
+            <img class="desktop-image img-responsive" src="{{post.image_url}}">
             <div class="overlay-icon view-icon -thumb"></div>
           </a>
 

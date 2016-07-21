@@ -161,7 +161,8 @@ h1.page-title {
 }
 
 .store-image .desktop-image {
-    display: block
+    display: block;
+    min-width: 962px;
 }
 
 .store-image:after {
