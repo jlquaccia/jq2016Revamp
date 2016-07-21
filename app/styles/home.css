@@ -715,7 +715,7 @@ section#contact {
 /* Cross Browser Compatibility */
 /*---------------------------------------------------------*/
 
-/*This will work for firefox*/
+/* This will work for firefox only */
 @-moz-document url-prefix() {
     .selfie_1 {
         width: 450px;
