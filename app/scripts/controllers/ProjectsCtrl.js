@@ -1,12 +1,17 @@
 (function() {
-    function ProjectsCtrl($rootScope, HamburgerMenu) {
+    function ProjectsCtrl($rootScope, $anchorScroll, HamburgerMenu) {
       // Hamburger Icon Animation
       $rootScope.toggleMenu = function() {
           HamburgerMenu.toggleMenu();
       };
+
+      // Always default to top of page on state change
+      $rootScope.$watchCollection('$stateParams', function() {
+         $anchorScroll('top');
+      });
     }
     
     angular
         .module('jq2016Revamp')
-        .controller('ProjectsCtrl', ['$rootScope', 'HamburgerMenu', ProjectsCtrl]);
+        .controller('ProjectsCtrl', ['$rootScope', '$anchorScroll', 'HamburgerMenu', ProjectsCtrl]);
 })();

@@ -1,5 +1,5 @@
 (function() {
-  function PostListCtrl($scope, $rootScope, $http, $resource, $state, Posts, Post, HamburgerMenu) {
+  function PostListCtrl($scope, $rootScope, $http, $resource, $state, $anchorScroll, Posts, Post, HamburgerMenu) {
     $scope.posts = Posts.query();
     
     $scope.deletePost = function(postId) {
@@ -15,9 +15,17 @@
     $rootScope.toggleMenu = function() {
         HamburgerMenu.toggleMenu();
     };
+
+    // Always default to top of page on state change
+    $rootScope.$watchCollection('$stateParams', function() {
+       $anchorScroll('top');
+    });
+
+    $rootScope.current = $state.current.name;
+    console.log($rootScope.current);
   }
   
   angular
     .module('jq2016Revamp')
-    .controller('PostListCtrl', ['$scope', '$rootScope', '$http', '$resource', '$state', 'Posts', 'Post', 'HamburgerMenu', PostListCtrl]);
+    .controller('PostListCtrl', ['$scope', '$rootScope', '$http', '$resource', '$state', '$anchorScroll', 'Posts', 'Post', 'HamburgerMenu', PostListCtrl]);
 })();

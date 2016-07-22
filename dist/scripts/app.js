@@ -40,9 +40,19 @@
               templateUrl: '/templates/posts/show.html'
             })
             .state('projects', {
-                url: '/projects',
-                controller: 'ProjectsCtrl as projects',
-                templateUrl: '/templates/projects.html'
+                url: '/#projects',
+                controller: 'HomeCtrl as home',
+                templateUrl: '/templates/home.html'
+            })
+            .state('contact', {
+                url: '/#contact',
+                controller: 'HomeCtrl as home',
+                templateUrl: '/templates/home.html'
+            })
+            .state('about', {
+                url: '/#about',
+                controller: 'HomeCtrl as home',
+                templateUrl: '/templates/home.html'
             });
     }
     

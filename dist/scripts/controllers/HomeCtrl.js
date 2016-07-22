@@ -1,9 +1,20 @@
 (function() {
-    function HomeCtrl($scope, $rootScope, HamburgerMenu, Fixtures) {
+    function HomeCtrl($scope, $rootScope, $location, $anchorScroll, $state, HamburgerMenu, Fixtures) {
         // Hamburger Icon Animation
         $rootScope.toggleMenu = function() {
             HamburgerMenu.toggleMenu();
         };
+
+        $rootScope.scrollToTop = function() {
+            $anchorScroll();
+            $location.hash('top');
+            console.log('Inside scrollToTop method.');
+        };
+
+        // Always default to top of page on state change
+        $rootScope.$watchCollection('$stateParams', function() {
+           $anchorScroll('top');
+        });
         
         this.projects = Fixtures.getProjects();
 
@@ -19,11 +30,15 @@
                 $scope.message = '';
             }
         };
+
+        $rootScope.current = $state.current.name;
+
+        console.log($rootScope.current);
     }
     
     angular
         .module('jq2016Revamp')
-        .controller('HomeCtrl', ['$scope', '$rootScope', 'HamburgerMenu', 'Fixtures', HomeCtrl]);
+        .controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$anchorScroll', '$state', 'HamburgerMenu', 'Fixtures', HomeCtrl]);
 })();
 
 // https://aqueous-lowlands-24334.herokuapp.com

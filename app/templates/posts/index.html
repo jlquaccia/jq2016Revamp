@@ -1,48 +1,47 @@
-
-  <div class="blog_content" scrolly>
-    <header class="blog_header">
-      <div class="blog_header_wrapper">
-        <div class="blog_stars">
-          <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-        </div>
-
-        <div class="blog_title">
-          <span>blog</span>
-        </div>
-      </div>
-      
-      <div class="module module-full">
-        <h3 class="body-copy"><span>Life is a constant work in progress.  These posts are dedicated to those</span><span>works in progress AND just a few of my favorite things..</span></h3>
+<div class="blog_content" id="top" scrolly>
+  <header class="blog_header">
+    <div class="blog_header_wrapper">
+      <div class="blog_stars">
+        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
       </div>
 
-      <div ng-hide="posts.length" class="text-center">
-        <hr class="no_posts_hr">
-        There are no posts at this time...
+      <div class="blog_title">
+        <span>blog</span>
       </div>
-    </header>
+    </div>
     
-    <section id="blog_posts" class="blog_section">
-      <div class="posts_wrapper" ng-repeat="post in posts | orderBy:'-created_at'">
-        <div class="module module-full featured-store">
-          <a class="store-image" data-nagios-track="" ui-sref="edit({id: post.id})">
-            <img class="desktop-image img-responsive" src="{{post.image_url}}">
-            <div class="overlay-icon view-icon -thumb"></div>
-          </a>
+    <div class="module module-full">
+      <h3 class="body-copy"><span>Life is a constant work in progress.  These posts are dedicated to those</span><span>works in progress AND just a few of my favorite things..</span></h3>
+    </div>
 
-          <div class="store-content">
-            <div class="store-content-wrapper">
-              <div class="store-title">{{post.title}}</div>
-              <small class="text-muted">posted {{post.created_at | timeago}}</small>
-              <div class="store-description">{{post.description}}</div>
-            </div>
-            <div class="store-more-info">
-              <a class="show-modal" href="https://www.bigcartel.com/examples/#windingwheelsupply"></a>
-            </div>
-            <div class="store-link">
-              <a ui-sref="show({id: post.id})"><span>Read</span></a>
-            </div>
+    <div ng-hide="posts.length" class="text-center">
+      <hr class="no_posts_hr">
+      There are no posts at this time...
+    </div>
+  </header>
+  
+  <section id="blog_posts" class="blog_section">
+    <div class="posts_wrapper" ng-repeat="post in posts | orderBy:'-created_at'">
+      <div class="module module-full featured-store">
+        <a class="store-image" data-nagios-track="" ui-sref="edit({id: post.id})">
+          <img class="desktop-image img-responsive" src="{{post.image_url}}">
+          <div class="overlay-icon view-icon -thumb"></div>
+        </a>
+
+        <div class="store-content">
+          <div class="store-content-wrapper">
+            <div class="store-title">{{post.title}}</div>
+            <small class="text-muted">posted {{post.created_at | timeago}}</small>
+            <div class="store-description">{{post.description}}</div>
+          </div>
+          <div class="store-more-info">
+            <a class="show-modal" href="https://www.bigcartel.com/examples/#windingwheelsupply"></a>
+          </div>
+          <div class="store-link">
+            <a ui-sref="show({id: post.id})"><span>Read</span></a>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
