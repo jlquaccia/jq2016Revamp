@@ -363,6 +363,14 @@ h3.body-copy span {
   transform: translateZ(-1px) scale(2);
 }
 
+.home_parallax_header {
+  position: relative;
+  vertical-align: top;
+  transform-origin: center top;
+  transform: translateZ(-1px) scale(2);
+  margin-left: -5px;
+}
+
 .blog_section {
   min-height: 200vh;
   background: white;

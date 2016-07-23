@@ -7,6 +7,7 @@
             });
         
         $stateProvider
+            // Home
             .state('home', {
                 url: '/',
                 controller: 'HomeCtrl as home',
@@ -39,20 +40,29 @@
               controller: 'PostShowCtrl as postShow',
               templateUrl: '/templates/posts/show.html'
             })
+            // Projects Section
             .state('projects', {
                 url: '/#projects',
                 controller: 'HomeCtrl as home',
                 templateUrl: '/templates/home.html'
             })
+            // Contact Section
             .state('contact', {
                 url: '/#contact',
                 controller: 'HomeCtrl as home',
                 templateUrl: '/templates/home.html'
             })
+            // About Section
             .state('about', {
                 url: '/#about',
                 controller: 'HomeCtrl as home',
                 templateUrl: '/templates/home.html'
+            })
+            // Projects Show
+            .state('project', {
+                url: '/projects/:id/:title',
+                controller: 'ProjectShowCtrl as projectShow',
+                templateUrl: '/templates/projects/show.html'
             });
     }
     
