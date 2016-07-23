@@ -1,178 +1,182 @@
-<!--  Intro Description  -->
-<div class="home_banner" id="top">
-    <div>
-        <p>
-            My name is Jason Quaccia<br>
-            And I'm three-quarters frontend developer and one-quarter backend developer
-        </p>
+<div class="blog_header">
+    <!--  Intro Description  -->
+    <div class="home_banner" id="top">
+        <div>
+            <p>
+                My name is Jason Quaccia<br>
+                And I'm three-quarters frontend developer and one-quarter backend developer
+            </p>
+        </div>
+        
+        <!-- ============================================================================================= -->
+        <!-- ALL BROWSERS EXCEPT FIREFOX -->
+        <!-- ============================================================================================= -->
+
+        <!--  Selfie  -->
+        <img src="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Selfies/eighteen.jpg" alt="Selfie" id="all_browsers_but_ff_selfie" class="selfie_1 img-responsive">
+
+        <!-- ============================================================================================= -->
+        <!-- END -->
+        <!-- ============================================================================================= -->
+        
+        <!-- ============================================================================================= -->
+        <!-- FIREFOX ONLY -->
+        <!-- ============================================================================================= -->
+        <!--  Selfie  -->
+        <div id="firefox_selfie">
+            <svg height="250px" width="450px">
+                <defs>
+                    <clipPath id="clipPath">
+                            <circle cx="230" cy="200" r="200" />
+                    </clipPath>
+                </defs>
+                <image xlink:href="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Selfies/eighteen.jpg" width="450" height="253" style="clip-path: url(#clipPath);" class="selfie_1 img-responsive" />
+            </svg>
+        </div>
+
+        <!-- ============================================================================================= -->
+        <!-- END -->
+        <!-- ============================================================================================= -->
     </div>
-    
-    <!-- ============================================================================================= -->
-    <!-- ALL BROWSERS EXCEPT FIREFOX -->
-    <!-- ============================================================================================= -->
-
-    <!--  Selfie  -->
-    <img src="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Selfies/eighteen.jpg" alt="Selfie" id="all_browsers_but_ff_selfie" class="selfie_1 img-responsive">
-
-    <!-- ============================================================================================= -->
-    <!-- END -->
-    <!-- ============================================================================================= -->
-    
-    <!-- ============================================================================================= -->
-    <!-- FIREFOX ONLY -->
-    <!-- ============================================================================================= -->
-    <!--  Selfie  -->
-    <div id="firefox_selfie">
-        <svg height="250px" width="450px">
-            <defs>
-                <clipPath id="clipPath">
-                        <circle cx="230" cy="200" r="200" />
-                </clipPath>
-            </defs>
-            <image xlink:href="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Selfies/eighteen.jpg" width="450" height="253" style="clip-path: url(#clipPath);" class="selfie_1 img-responsive" />
-        </svg>
-    </div>
-
-    <!-- ============================================================================================= -->
-    <!-- END -->
-    <!-- ============================================================================================= -->
 </div>
 
-<!--  Projects Section  -->
-<section id="projects">
-    <div class="row section_wrapper">
-        <div class="col-md-12 section_header">
-            <h1 class="section_title">Projects</h1>
-            <div class="section_title_underline"></div>
+<div class="blog_section">
+    <!--  Projects Section  -->
+    <section id="projects">
+        <div class="row section_wrapper">
+            <div class="col-md-12 section_header">
+                <h1 class="section_title">Projects</h1>
+                <div class="section_title_underline"></div>
+            </div>
+            
+            <div class="col-md-12 work_wrapper">
+                <div id="work">
+                    <div class="wrap">
+                      <article class="work_content">
+                        <div class="col1"></div>
+
+                        <div class="clear"></div>
+
+                        <div class="col1" ng-repeat="project in home.projects">
+                          <a ui-sref="projects" class="item">
+                            <span>
+                              <span class="button-cont">
+                                <span class="static">{{project.title}}</span>
+                                <span class="hover-overflow"><span class="hover">{{project.title}}</span></span>
+                              </span>
+                            </span>
+                            
+                            <img width="1870" height="554" src="{{project.imageUrl}}" alt="{{project.title}}">
+                          </a>
+                        </div>
+
+                        <div class="clear"></div>
+                      </article>
+                    </div>
+                  </div>
+            </div>
         </div>
-        
-        <div class="col-md-12 work_wrapper">
-            <div id="work">
-                <div class="wrap">
-                  <article class="work_content">
-                    <div class="col1"></div>
+    </section>
 
-                    <div class="clear"></div>
+    <!--  About Section  -->
+    <section id="about">
+        <div class="row section_wrapper">
+            <div class="col-md-12 section_header about_header">
+                <div class="float_right_wrapper">
+                    <h1 class="section_title float_right">About</h1>
+                    <div style="clear: both;"></div>
+                    <div class="section_title_underline section_title_underline_about float_right"></div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+            
+            <div class="about_text_image_wrapper">
+                <div class="col-md-6 about_text">
+                    <p class="about_text_bg">
+                        Bay Area native with a strong appetite for technology and pop culture.  I'm seeking a career change into the everlasting world of web development, and after two and a half years of training I'm ready for a junior role.  I've survived two coding bootcamps and countless hours of self studying which has enabled me to produce numerous projects, gain a deep understanding of programming fundamentals and also become really really good at Googling things.  Presently, I consider myself to be three-quarters of a full-stack developer.  I'm more comfortable with front-end development but am quickly improving upon my back-end chops.  When I'm not developing code, I love the outdoors, reading, being a musical connoisseur, going to shows, trying new restaurants, experiencing epiphanies, netflixing and putting sriracha on everything. Ah.
+                    </p>
+                </div>
 
-                    <div class="col1" ng-repeat="project in home.projects">
-                      <a ui-sref="projects" class="item">
-                        <span>
-                          <span class="button-cont">
-                            <span class="static">{{project.title}}</span>
-                            <span class="hover-overflow"><span class="hover">{{project.title}}</span></span>
-                          </span>
-                        </span>
+                <div class="col-md-6 about_image">
+                    <img src="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Selfies/two.jpg" alt="" class="about_me_selfie img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Contact Section  -->
+    <section id="contact">
+        <div class="row section_wrapper">
+            <div class="col-md-12 section_header contact_header">
+                <h1 class="section_title">Contact</h1>
+                <div class="section_title_underline"></div>
+            </div>
+            
+            <div class="skewed_bg">
+                <div class="col-md-6 contact_form_inner_wrapper skewed_content">
+                    <div class="contact_cta_text_wrapper">
+                        <h2>Wanna get in touch?</h2>
+                        <h5>drop me a line..</h5>
+                    </div>
+
+                    <form ng-submit="submitMessage()" name="contactForm" novalidate id="contact_form">
+                        <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.name.$invalid}">
+                            <input type="text" name="name" class="form-control cf_input_focus contact_name" placeholder="Your name" ng-model="name" required ng-class="{'cf_input_error' : submitted && contactForm.name.$invalid}">
+                            <p ng-show="submitted && contactForm.name.$invalid" class="help-block cf_name_error">Name is required.</p>
+                        </div>
+
+                        <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.email.$invalid}">
+                            <input type="email" name="email" class="form-control cf_input_focus contact_email" placeholder="Your email" ng-model="email" required ng-class="{'cf_input_error' : submitted && contactForm.email.$invalid}">
+                            <p ng-show="submitted && contactForm.email.$invalid" class="help-block cf_email_error">Email is required.</p>
+                        </div>
+
+                        <div style="clear:both;"></div>
+
+                        <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.phone_number.$invalid}">
+                            <input type="tel" name="phone_number" class="form-control cf_input_focus contact_phone" placeholder="Your phone number" ng-model="phone_number" required ng-class="{'cf_input_error' : submitted && contactForm.phone_number.$invalid}">
+                            <p ng-show="submitted && contactForm.phone_number.$invalid" class="help-block">Phone number is required.</p>
+                        </div>
+
+                        <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.message.$invalid}">
+                            <textarea class="form-control cf_input_focus" name="message" placeholder="Your message" cols="40" rows="10" ng-model="message" required ng-class="{'cf_input_error' : submitted && contactForm.message.$invalid}"></textarea>
+                            <p ng-show="submitted && contactForm.message.$invalid" class="help-block">Message is required.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-default cf_btn" type="submit" ng-click="submitted=true">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-12 contact_info_wrapper skewed_content">
+                    <div class="contact_info_inner_wrapper">
+                        <span>Jason Quaccia</span><br><br>
+                        <span>jlquaccia@gmail.com</span><br><br>
+                        <span>(650) 773-5340</span><br><br>
                         
-                        <img width="1870" height="554" src="{{project.imageUrl}}" alt="{{project.title}}">
-                      </a>
-                    </div>
-
-                    <div class="clear"></div>
-                  </article>
-                </div>
-              </div>
-        </div>
-    </div>
-</section>
-
-<!--  About Section  -->
-<section id="about">
-    <div class="row section_wrapper">
-        <div class="col-md-12 section_header about_header">
-            <div class="float_right_wrapper">
-                <h1 class="section_title float_right">About</h1>
-                <div style="clear: both;"></div>
-                <div class="section_title_underline section_title_underline_about float_right"></div>
-                <div style="clear: both;"></div>
-            </div>
-        </div>
-        
-        <div class="about_text_image_wrapper">
-            <div class="col-md-6 about_text">
-                <p class="about_text_bg">
-                    Bay Area native with a strong appetite for technology and pop culture.  I'm seeking a career change into the everlasting world of web development, and after two and a half years of training I'm ready for a junior role.  I've survived two coding bootcamps and countless hours of self studying which has enabled me to produce numerous projects, gain a deep understanding of programming fundamentals and also become really really good at Googling things.  Presently, I consider myself to be three-quarters of a full-stack developer.  I'm more comfortable with front-end development but am quickly improving upon my back-end chops.  When I'm not developing code, I love the outdoors, reading, being a musical connoisseur, going to shows, trying new restaurants, experiencing epiphanies, netflixing and putting sriracha on everything. Ah.
-                </p>
-            </div>
-
-            <div class="col-md-6 about_image">
-                <img src="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Selfies/two.jpg" alt="" class="about_me_selfie img-responsive">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--  Contact Section  -->
-<section id="contact">
-    <div class="row section_wrapper">
-        <div class="col-md-12 section_header contact_header">
-            <h1 class="section_title">Contact</h1>
-            <div class="section_title_underline"></div>
-        </div>
-        
-        <div class="skewed_bg">
-            <div class="col-md-6 contact_form_inner_wrapper skewed_content">
-                <div class="contact_cta_text_wrapper">
-                    <h2>Wanna get in touch?</h2>
-                    <h5>drop me a line..</h5>
-                </div>
-
-                <form ng-submit="submitMessage()" name="contactForm" novalidate id="contact_form">
-                    <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.name.$invalid}">
-                        <input type="text" name="name" class="form-control cf_input_focus contact_name" placeholder="Your name" ng-model="name" required ng-class="{'cf_input_error' : submitted && contactForm.name.$invalid}">
-                        <p ng-show="submitted && contactForm.name.$invalid" class="help-block cf_name_error">Name is required.</p>
-                    </div>
-
-                    <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.email.$invalid}">
-                        <input type="email" name="email" class="form-control cf_input_focus contact_email" placeholder="Your email" ng-model="email" required ng-class="{'cf_input_error' : submitted && contactForm.email.$invalid}">
-                        <p ng-show="submitted && contactForm.email.$invalid" class="help-block cf_email_error">Email is required.</p>
-                    </div>
-
-                    <div style="clear:both;"></div>
-
-                    <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.phone_number.$invalid}">
-                        <input type="tel" name="phone_number" class="form-control cf_input_focus contact_phone" placeholder="Your phone number" ng-model="phone_number" required ng-class="{'cf_input_error' : submitted && contactForm.phone_number.$invalid}">
-                        <p ng-show="submitted && contactForm.phone_number.$invalid" class="help-block">Phone number is required.</p>
-                    </div>
-
-                    <div class="form-group" ng-class="{'cf_error' : submitted && contactForm.message.$invalid}">
-                        <textarea class="form-control cf_input_focus" name="message" placeholder="Your message" cols="40" rows="10" ng-model="message" required ng-class="{'cf_input_error' : submitted && contactForm.message.$invalid}"></textarea>
-                        <p ng-show="submitted && contactForm.message.$invalid" class="help-block">Message is required.</p>
-                    </div>
-
-                    <div class="form-group">
-                        <button class="btn btn-default cf_btn" type="submit" ng-click="submitted=true">Submit</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="col-md-12 contact_info_wrapper skewed_content">
-                <div class="contact_info_inner_wrapper">
-                    <span>Jason Quaccia</span><br><br>
-                    <span>jlquaccia@gmail.com</span><br><br>
-                    <span>(650) 773-5340</span><br><br>
-                    
-                    <div class="social">
-                        <a href="https://github.com/jlquaccia" target="_blank">
-                            <i class="ion-social-github-outline"></i>
-                        </a>
-                        <a href="https://www.codewars.com/users/jlquaccia" target="_blank">
-                            <i class="ion-code"></i>
-                        </a>
-                        <a href="http://codepen.io/jlquaccia" target="_blank">
-                            <i class="ion-social-codepen-outline"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/jlquaccia" target="_blank">
-                            <i class="ion-social-linkedin-outline"></i>
-                        </a>
-                        <a href="https://twitter.com/jlquaccia" target="_blank">
-                            <i class="ion-social-twitter-outline"></i>
-                        </a>
-                        <a href="https://www.instagram.com/jquatchaa" target="_blank">
-                            <i class="ion-social-instagram-outline"></i>
-                        </a>
+                        <div class="social">
+                            <a href="https://github.com/jlquaccia" target="_blank">
+                                <i class="ion-social-github-outline"></i>
+                            </a>
+                            <a href="https://www.codewars.com/users/jlquaccia" target="_blank">
+                                <i class="ion-code"></i>
+                            </a>
+                            <a href="http://codepen.io/jlquaccia" target="_blank">
+                                <i class="ion-social-codepen-outline"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jlquaccia" target="_blank">
+                                <i class="ion-social-linkedin-outline"></i>
+                            </a>
+                            <a href="https://twitter.com/jlquaccia" target="_blank">
+                                <i class="ion-social-twitter-outline"></i>
+                            </a>
+                            <a href="https://www.instagram.com/jquatchaa" target="_blank">
+                                <i class="ion-social-instagram-outline"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
