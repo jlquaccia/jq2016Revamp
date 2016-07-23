@@ -79,6 +79,8 @@ section {
     transition: .5s ease-in-out;
     cursor: pointer;
     left: 50px;
+    background-color: #fff;
+    border: 7px solid #fff;
 }
 
 #nav-icon3 span {
