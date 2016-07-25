@@ -1,11 +1,10 @@
 (function() {
-  function ProjectShowCtrl($scope, $state, Fixtures) {
+  function ProjectShowCtrl($scope, $state, $rootScope, Fixtures) {
     $scope.currentProject = Fixtures.getProject($state.params.id);
-
-    // console.log($state.params.id);
+    $rootScope.current = $state.current.name;
   }
 
   angular
     .module('jq2016Revamp')
-    .controller('ProjectShowCtrl', ['$scope', '$state', 'Fixtures', ProjectShowCtrl]);
+    .controller('ProjectShowCtrl', ['$scope', '$state', '$rootScope', 'Fixtures', ProjectShowCtrl]);
 })();
