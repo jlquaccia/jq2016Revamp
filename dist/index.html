@@ -40,21 +40,21 @@
     <div class="primary-navigation">
       <div class="primary-navigation__outer">
         <nav class="primary-navigation__inner animated">
-          <a class="primary-navigation__inner-item primary-navigation__inner-item--current" ui-sref="home" title="Home" ng-click="toggleMenu(); scrollToTop()">Home</a>
+          <a class="primary-navigation__inner-item primary-navigation__inner-item--current" ui-sref="home" title="Home" ng-click="toggleMenu(); scrollToTop(); overflowXHidden()">Home</a>
           
           <!-- Projects -->
           <a ng-show="current === 'home' || current === 'projects'" class="primary-navigation__inner-item" href="#projects" title="Projects" ng-click="toggleMenu()">Projects</a>
-          <a ng-show="current === 'posts'" class="primary-navigation__inner-item" ui-sref="projects" title="Projects" ng-click="toggleMenu()">Projects</a>
+          <a ng-show="current === 'posts' || current === 'project'" class="primary-navigation__inner-item" ui-sref="projects" title="Projects" ng-click="toggleMenu()">Projects</a>
           
           <!-- About -->
           <a ng-show="current === 'home' || current === 'about'" class="primary-navigation__inner-item" href="#about" title="About" ng-click="toggleMenu()">About</a>
-          <a ng-show="current === 'posts'" class="primary-navigation__inner-item" ui-sref="about" title="About" ng-click="toggleMenu()">About</a>
+          <a ng-show="current === 'posts' || current === 'project'" class="primary-navigation__inner-item" ui-sref="about" title="About" ng-click="toggleMenu()">About</a>
 
           <!-- Contact -->
           <a ng-show="current === 'home' || current === 'contact'" class="primary-navigation__inner-item" href="#contact" title="Contact" ng-click="toggleMenu()">Contact</a>
-          <a ng-show="current === 'posts'" class="primary-navigation__inner-item" ui-sref="contact" title="Contact" ng-click="toggleMenu()">Contact</a>
+          <a ng-show="current === 'posts' || current === 'project'" class="primary-navigation__inner-item" ui-sref="contact" title="Contact" ng-click="toggleMenu()">Contact</a>
 
-          <a class="primary-navigation__inner-item" ui-sref="posts" title="Blog" ng-click="toggleMenu()">Blog</a>
+          <a class="primary-navigation__inner-item" ui-sref="posts" title="Blog" ng-click="toggleMenu(); overflowXHidden()">Blog</a>
         </nav>
       </div>
     </div>

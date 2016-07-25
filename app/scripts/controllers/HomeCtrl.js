@@ -7,13 +7,13 @@
 
         $rootScope.scrollToTop = function() {
             $anchorScroll();
-            $location.hash('top');
+            $location.hash('home_top');
             console.log('Inside scrollToTop method.');
         };
 
         // Always default to top of page on state change
         $rootScope.$watchCollection('$stateParams', function() {
-           $anchorScroll('top');
+           $anchorScroll('home_top');
         });
         
         this.projects = Fixtures.getProjects();

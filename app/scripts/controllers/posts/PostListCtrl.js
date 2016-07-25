@@ -18,7 +18,7 @@
 
     // Always default to top of page on state change
     $rootScope.$watchCollection('$stateParams', function() {
-       $anchorScroll('top');
+       $anchorScroll('blog_top');
     });
 
     $rootScope.current = $state.current.name;
