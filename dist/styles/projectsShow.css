@@ -180,7 +180,7 @@ body {
 }
 
 .aside .inner {
-  background: #fff;
+  background: #FFE95C;
   padding: 50px 20px;
   width: 300px;
 }
@@ -191,9 +191,10 @@ body {
 
 /* === FEATURE === */
 #feature {
-  background: url(http://orangeyouglad.com/wp-content/themes/oyg/img/feature-bg.jpg) 50% 0 no-repeat;
+  /*background: url(http://orangeyouglad.com/wp-content/themes/oyg/img/feature-bg.jpg) 50% 0 no-repeat;*/
   background-attachment: fixed;
-  background-size: cover;
+  /*background-size: cover;*/
+  background-repeat: repeat;
 }
 
 #feature .wrap {
@@ -223,10 +224,18 @@ body {
   display: inline-block;
 }
 
-#feature .wrap .logo .logo-cont img {
+#feature .title_wrapper {
   vertical-align: middle;
   max-width: 600px;
   display: inline-block;
+  /*border: 2px solid #fff;*/
+  border: 2px solid #000;
+  padding: 37px 30px 30px;
+  background-color: #fff;
+}
+
+#feature .current_project_title {
+  background-color: #FFE95C;
 }
 
 @media (max-width: 610px) {
@@ -236,7 +245,7 @@ body {
 }
 
 #feature .content {
-  background: #fff;
+  /*background: #fff;*/
   margin: 0 150px 0 -150px;
 }
 
@@ -246,6 +255,20 @@ body {
 
 #feature .section.margin .item.image {
   padding: 43px;
+}
+
+#feature .section.margin {
+  background-color: #fff;
+}
+
+#feature .section.margin .item.image h1 {
+  background-color: #FFE95C;
+  color: #000;
+  text-decoration: underline;
+}
+
+#feature .section.margin_gap {
+  margin-top: 1px;
 }
 
 #feature .section.margin .item.image img {
@@ -268,6 +291,7 @@ body {
   font-size: 15px;
   letter-spacing: .005em;
   line-height: 24px;
+  text-align: left;
 }
 
 #feature .item .static {

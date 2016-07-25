@@ -64,6 +64,11 @@ section {
 /* Hamburger Menu Icon */
 /*---------------------------------------------------------*/
 
+.yellow_hamburger_bg {
+    background-color: #FFE95C !important;
+    border-color: #FFE95C !important;
+}
+
 #nav-icon3 {
     width: 60px;
     height: 45px;
