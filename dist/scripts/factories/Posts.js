@@ -1,6 +1,6 @@
 (function() {
   function Posts($resource) {
-    return $resource('http://localhost:4000/posts.json', {}, {
+    return $resource('https://aqueous-lowlands-24334.herokuapp.com/posts.json', {}, {
       query: { method: 'GET', isArray: true },
       create: { method: 'POST' }
     });
@@ -12,3 +12,4 @@
 })();
 
 // https://aqueous-lowlands-24334.herokuapp.com/posts.json
+// http://localhost:4000/posts.json

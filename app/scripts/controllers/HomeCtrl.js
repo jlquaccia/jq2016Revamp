@@ -20,7 +20,7 @@
 
         $scope.submitMessage = function() {
             if ($scope.contactForm.$valid) {
-                $.post('http://localhost:4000/inquiries', {inquiry: {name: $scope.name, email: $scope.email, phone_number: $scope.phone_number, message: $scope.message}});
+                $.post('https://aqueous-lowlands-24334.herokuapp.com/inquiries', {inquiry: {name: $scope.name, email: $scope.email, phone_number: $scope.phone_number, message: $scope.message}});
 
                 console.log('message sent');
 
@@ -41,4 +41,5 @@
         .controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$anchorScroll', '$state', 'HamburgerMenu', 'Fixtures', HomeCtrl]);
 })();
 
-// https://aqueous-lowlands-24334.herokuapp.com
+// https://aqueous-lowlands-24334.herokuapp.com/inquiries
+// http://localhost:4000/inquiries

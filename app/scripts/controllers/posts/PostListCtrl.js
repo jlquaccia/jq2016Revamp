@@ -1,5 +1,6 @@
 (function() {
   function PostListCtrl($scope, $rootScope, $http, $resource, $state, $anchorScroll, Posts, Post, HamburgerMenu) {
+    window.foo = Posts;
     $scope.posts = Posts.query();
     
     $scope.deletePost = function(postId) {
