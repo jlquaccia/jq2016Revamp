@@ -8,7 +8,6 @@
         $rootScope.scrollToTop = function() {
             $anchorScroll();
             $location.hash('home_top');
-            console.log('Inside scrollToTop method.');
         };
 
         // Always default to top of page on state change
@@ -34,6 +33,32 @@
         $rootScope.current = $state.current.name;
 
         console.log($rootScope.current);
+
+
+        if ($rootScope.current === 'home') {
+          $('.smoothScroll').click(function() {
+            $('.blog_main').css('overflow-x', 'initial');
+
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 800);
+                return false;
+              }
+            }
+          });
+        }
+
+        $rootScope.setOverflowXToHidden = function() {
+          $('.blog_main').css('overflow-x', 'hidden');
+        };
+
+        $rootScope.setOverflowXToInitial = function() {
+          $('.blog_main').css('overflow-x', 'initial');
+        };
     }
     
     angular

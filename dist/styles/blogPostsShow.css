@@ -1,0 +1,21 @@
+.blog_post_bg_img {
+  background-repeat: repeat;
+  background-image: url(http://punksjumpup.co.uk/support/skins/shop/img/bg-pattern.jpg);
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  height: 100%;
+  background-attachment: fixed;
+  -webkit-filter: invert(75%);
+}
+
+#feature .blog_post_content {
+  margin: 0;
+}
+
+small.time_since_blogpost_posted {
+  background-color: #fff;
+  position: relative;
+  top: -250px;
+  padding: 5px;
+}

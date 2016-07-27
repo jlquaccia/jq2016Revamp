@@ -1,4 +1,4 @@
-<div class="home_parallax_header" id="home_top">
+<div id="home_top">
     <!--  Intro Description  -->
     <div class="home_banner">
         <div>
@@ -58,7 +58,7 @@
                         <div class="clear"></div>
 
                         <div class="col1" ng-repeat="project in home.projects">
-                          <a ui-sref="project({id: project.id, title: project.urlTitle})" class="item">
+                          <a ui-sref="project({id: project.id, title: project.urlTitle})" ng-click="scrollTopOfProjectPage()" class="item">
                             <span>
                               <span class="button-cont">
                                 <span class="static">{{project.title}}</span>

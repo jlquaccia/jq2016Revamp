@@ -1,7 +1,34 @@
-<div class="container blog_container_wrapper" id="top">
-  <div class="row">
-    <h1>Post Show Page</h1>
-    {{post.title}}
-    {{post.body}}
+<!-- To go back to the way the bg_img originally was: -->
+<!-- 1.) Delete the blog_post_bg_img class 2.) Change style of #feature back to background-image: url(http://punksjumpup.co.uk/support/skins/shop/img/bg-pattern.jpg); -->
+
+<div class="project_wrapper" id="project_top">
+  <div class="blog_post_bg_img"></div>
+  <div id="feature" style="background-color: transparent; overflow: hidden;">
+    <div class="wrap">
+      <div class="logo offset" style="padding-top: 646px;">
+        <div class="logo-cont">
+          <span class="vertical-aligner"></span>
+          <div class="title_wrapper">
+            <h1 class="current_project_title">{{post.title}}</h1>
+          </div>
+          <span class="vertical-aligner"></span>
+        </div>
+      </div>
+      <div class="text-center">
+        <small class="time_since_blogpost_posted">posted {{post.created_at | timeago}}</small>
+      </div>
+      <article class="content blog_post_content">
+        <div class="section">
+          <div class="item image">
+            <img src="{{post.image_url}}" />
+          </div>
+        </div>
+        <div class="section margin margin_gap">
+          <div class="item image">
+            <p>{{post.body}}</p>
+          </div>
+        </div>
+      </article>
+    </div>
   </div>
 </div>

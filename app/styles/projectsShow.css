@@ -122,7 +122,7 @@ body {
   padding: 0 0 10rem;
 }
 
-#wrapper {
+.project_wrapper {
   position: relative;
   z-index: 998;
 }
@@ -203,9 +203,7 @@ ul.technologies_list {
 
 /* === FEATURE === */
 #feature {
-  /*background: url(http://orangeyouglad.com/wp-content/themes/oyg/img/feature-bg.jpg) 50% 0 no-repeat;*/
   background-attachment: fixed;
-  /*background-size: cover;*/
   background-repeat: repeat;
 }
 

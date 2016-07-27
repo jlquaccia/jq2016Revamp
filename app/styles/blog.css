@@ -23,7 +23,8 @@ body {
 }
 
 .blog_content {
-    background-color: #FFE95C;
+    /*background-color: #FFE95C;*/
+    background-image: url(/assets/images/ZenBG.png);
     box-sizing: border-box;
     min-height: 100%;
     overflow: hidden;
