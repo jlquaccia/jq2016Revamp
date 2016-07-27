@@ -149,6 +149,65 @@ section {
 }
 
 /*---------------------------------------------------------*/
+/* Scroll Indicator */
+/*---------------------------------------------------------*/
+
+@keyframes scroll-indicate {
+  0% {
+    opacity: 1;
+  }
+  
+  20% {
+    opacity: 0;
+  }
+  
+  40% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.scrollIndicator {
+  position: absolute;
+  width: 100%;
+  top: 90%;
+}
+
+.scrollIndicator:before {
+  border-radius: 0 0 0 2px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid #293235;
+  border-left: 3px solid #293235;
+  content: '';
+  top: 0;
+  left: 50%;
+  margin-left: -12px;
+  animation: scroll-indicate 1.5s linear 0s infinite;
+}
+
+.scrollIndicator:after {
+  border-radius: 0 0 0 2px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid #293235;
+  border-left: 3px solid #293235;
+  box-sizing: border-box;
+  content: '';
+  top: 12px;
+  left: 50%;
+  margin-left: -12px;
+  animation: scroll-indicate 1.5s linear 0.25s infinite;
+}
+
+/*---------------------------------------------------------*/
 /* Header */
 /*---------------------------------------------------------*/
 
