@@ -1,5 +1,5 @@
 (function() {
-    function config($stateProvider, $locationProvider) {
+    function config($stateProvider, $locationProvider, $urlRouterProvider) {
         $locationProvider
             .html5Mode({
                 enabled: true,
@@ -64,6 +64,9 @@
                 controller: 'ProjectShowCtrl as projectShow',
                 templateUrl: '/templates/projects/show.html'
             });
+
+        $urlRouterProvider
+            .otherwise('/');
     }
     
     angular
