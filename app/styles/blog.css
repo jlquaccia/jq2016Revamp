@@ -383,6 +383,32 @@ html, body {
   height: 100%;
 }
 
+.blog_post_odd {
+    margin-left: 50px;
+}
+
+.blog_post_even {
+    margin-right: 50px;
+}
+
+h3.time_ago_blog_was_posted_odd {
+    background-color: #FFE95C;
+    padding-left: 100px;
+    display: inline;
+    padding-right: 50px;
+    float: left;
+    margin-bottom: 0;
+}
+
+h3.time_ago_blog_was_posted_even {
+    background-color: #FFE95C;
+    padding-left: 50px;
+    display: inline;
+    padding-right: 100px;
+    float: right;
+    margin-bottom: 0;
+}
+
 /* ==================================================================== */
 /* Responsiveness */
 /* ==================================================================== */
