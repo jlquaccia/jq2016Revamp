@@ -19,11 +19,18 @@
 
         $scope.submitMessage = function() {
             if ($scope.contactForm.$valid) {
-                $.post('http://localhost:4000/inquiries', {inquiry: {name: $scope.name, email: $scope.email, phone_number: $scope.phone_number, message: $scope.message}});
+                $.post('http://localhost:4000/inquiries',
+                  {
+                    inquiry: {
+                      name: $scope.name, email: $scope.email, phone_number: $scope.phone_number, message: $scope.message
+                    }
+                  });
 
                 console.log('message sent');
 
                 $rootScope.flashMessage();
+
+                $scope.submitted = false;
 
                 $scope.name = '';
                 $scope.email = '';
