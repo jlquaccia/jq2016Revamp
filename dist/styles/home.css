@@ -620,14 +620,25 @@ section#contact {
   border: none;
 }
 
+.cf_btn {
+  background-color: #fff;
+}
+
 .cf_btn:hover {
-  background-color: #FFE95C;
+  background-color: #FFE95C !important;
 }
 
 #contact_form .cf_btn:focus,
 #contact_form .cf_btn:active {
-  background-color: #FFE95C;
   outline: none;
+}
+
+#contact_form .cf_btn:active {
+  background-color: #FFE95C;
+}
+
+.btn-default.focus, .btn-default:focus {
+  background-color: #fff;
 }
 
 /*---------------------------------------------------------*/
