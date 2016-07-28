@@ -23,7 +23,9 @@
   <section id="blog_posts" class="blog_section">
     <div class="posts_wrapper" ng-repeat="post in posts | orderBy:'-created_at'">
       <div class="module module-full featured-store">
-        <a class="store-image" data-nagios-track="" ui-sref="edit({id: post.id})">
+        <!-- Refer to comment below to reach a relative posts edit page -->
+        <!-- <a class="store-image" data-nagios-track="" ui-sref="edit({id: post.id})"> -->
+        <a class="store-image" ui-sref="show({id: post.id})">
           <img class="desktop-image img-responsive" src="{{post.image_url}}">
           <div class="overlay-icon view-icon -thumb"></div>
         </a>

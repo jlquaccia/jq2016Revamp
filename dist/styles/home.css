@@ -182,8 +182,8 @@ section {
   width: 24px;
   height: 24px;
   transform: rotate(-45deg);
-  border-bottom: 3px solid #293235;
-  border-left: 3px solid #293235;
+  border-bottom: 3px solid gray;
+  border-left: 3px solid gray;
   content: '';
   top: 0;
   left: 50%;
@@ -197,8 +197,8 @@ section {
   width: 24px;
   height: 24px;
   transform: rotate(-45deg);
-  border-bottom: 3px solid #293235;
-  border-left: 3px solid #293235;
+  border-bottom: 3px solid gray;
+  border-left: 3px solid gray;
   box-sizing: border-box;
   content: '';
   top: 12px;
