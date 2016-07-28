@@ -265,8 +265,72 @@ h3.body-copy span {
 }
 
 /* ==================================================================== */
+/* Blog Posts Loader */
+/* ==================================================================== */
+
+/* Fade out loader once posts finish loading */
+/* NOTE: Not the best solution as this overrides angulars classes */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+    opacity: 0 !important;
+    display: block !important;
+}
+
+.faded {
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.load {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+}
+
+.load > div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 5px;
+  animation: load 3s infinite ease-in-out;
+}
+
+.load .load1 {
+  animation-delay: -1s;
+}
+
+.load .load2 {
+  animation-delay: -1.5s;
+}
+
+.load .load3 {
+  animation-delay: -2s;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  
+  30% {
+    opacity: 1;
+    transform: translate(0,0) rotate(0);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translate(180px,0) rotate(180deg);
+  }
+}
+
+
+/* ==================================================================== */
 /* Star Logo */
 /* ==================================================================== */
+
 .blog_header_wrapper {
     height: 100%;
     display: flex;
