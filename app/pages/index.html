@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
     <!--  Ionicon v2.0.1  -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Font Awesome v4.2.0 -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <!--  Bootstrap v3.3.6  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!--  Animate CSS  -->
@@ -60,6 +62,14 @@
           <a class="primary-navigation__inner-item" ui-sref="posts" title="Blog" ng-click="toggleMenu(); overflowXHidden(); setOverflowXToHidden()">Blog</a>
         </nav>
       </div>
+    </div>
+
+    <!-- Success Flash Message -->
+    <div class="flash_message animated">
+      <div class="flash__icon">
+        <i class="icon fa fa-check-circle-o"></i>
+      </div>
+      <p class="flash__body">Message Sent!</p>
     </div>
     
     <div class="container-fluid main_wrapper" ng-class="{'blog_main' : current === 'home' || current === 'posts'}">

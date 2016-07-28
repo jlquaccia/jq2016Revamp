@@ -633,9 +633,10 @@ section#contact {
 /*---------------------------------------------------------*/
 /* Contact Form Validation Classes */
 /*---------------------------------------------------------*/
+
 .cf_name_error {
     position: absolute;
-    top: 162px;
+    top: 141px;
 }
 
 .cf_email_error {
@@ -646,6 +647,48 @@ section#contact {
 
 .cf_error .help-block {
   color: #FFE95C;
+}
+
+/*---------------------------------------------------------*/
+/* Contact Form Flash Message */
+/*---------------------------------------------------------*/
+
+.flash_message {
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 350px;
+  padding: 20px 25px 20px 85px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #66847C;
+  background-color: #fff;
+  border: 2px solid #66847C;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  z-index: 99;
+  opacity: 0;
+}
+
+.flash_message .flash__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1.8em;
+  height: 100%;
+  padding: 0 0.4em;
+  background-color: #66847C;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 300;
+  transform: translate(0,-50%);
+}
+
+.flash_message .flash__icon .icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
 }
 
 /*---------------------------------------------------------*/

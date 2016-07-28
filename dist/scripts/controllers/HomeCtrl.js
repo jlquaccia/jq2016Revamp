@@ -19,14 +19,18 @@
 
         $scope.submitMessage = function() {
             if ($scope.contactForm.$valid) {
-                $.post('https://aqueous-lowlands-24334.herokuapp.com/inquiries', {inquiry: {name: $scope.name, email: $scope.email, phone_number: $scope.phone_number, message: $scope.message}});
+                $.post('http://localhost:4000/inquiries', {inquiry: {name: $scope.name, email: $scope.email, phone_number: $scope.phone_number, message: $scope.message}});
 
                 console.log('message sent');
+
+                $rootScope.flashMessage();
 
                 $scope.name = '';
                 $scope.email = '';
                 $scope.phone_number = '';
                 $scope.message = '';
+
+                $rootScope.resetFlashMessage();
             }
         };
 
@@ -58,6 +62,26 @@
 
         $rootScope.setOverflowXToInitial = function() {
           $('.blog_main').css('overflow-x', 'initial');
+        };
+
+        $rootScope.flashMessage = function() {
+          $('.flash_message').addClass('bounceIn');
+
+          setTimeout(function() {
+            $('.flash_message')
+              .css('opacity', '1')
+              .addClass('bounceOut');
+          }, 3500);
+        };
+
+        // remove flash message animation classes and reset opacity to 0
+        $rootScope.resetFlashMessage = function() {
+          setTimeout(function() {
+            $('.flash_message')
+              .css('opacity', '0')
+              .removeClass('bounceIn')
+              .removeClass('bounceOut');
+          }, 6000);
         };
     }
     
