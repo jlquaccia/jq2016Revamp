@@ -270,7 +270,7 @@ h3.body-copy span {
 
 /* Fade out loader once posts finish loading */
 /* NOTE: Not the best solution as this overrides angulars classes */
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate).ng_hide_override {
     opacity: 0 !important;
     display: block !important;
 }
