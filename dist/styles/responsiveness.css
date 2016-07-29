@@ -43,3 +43,13 @@
     border-left: 3px solid #fff;
   }
 }
+
+/*---------------------------------------------------------*/
+/* Max-Width: 400px */
+/*---------------------------------------------------------*/
+
+@media (max-width: 400px) {
+  .primary-navigation-opened .primary-navigation__inner {
+    bottom: 450px;
+  }
+}
