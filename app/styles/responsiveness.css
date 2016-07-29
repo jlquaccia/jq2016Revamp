@@ -58,6 +58,10 @@
     transform: none;
   }
 
+  #work .item::before {
+    border: 2px solid #fff;
+  }
+
   #work .item:hover img,
   #work .item:hover::before {
     border: 2px solid #fff;
@@ -79,11 +83,13 @@
     display: none;
   }
 
-  /*#work img {
-    opacity: 0;
-  }*/
-
   #work .item {
     min-height: 225px;
+    background: -webkit-linear-gradient(-45deg, #F7F7F7 0%, #FFE95C 100%);
+    background: linear-gradient(-45deg, #F7F7F7 0%, #FFE95C 100%);
+  }
+
+  .selfie_1 {
+    left: -1px;
   }
 }
