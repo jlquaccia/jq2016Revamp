@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl($scope, $rootScope, $location, $anchorScroll, $state, HamburgerMenu, Fixtures) {
+    function HomeCtrl($scope, $rootScope, $location, $anchorScroll, $state, HamburgerMenu, Fixtures, NoMobileHovers) {
         // Hamburger Icon Animation
         $rootScope.toggleMenu = function() {
             HamburgerMenu.toggleMenu();
@@ -90,11 +90,14 @@
               .removeClass('bounceOut');
           }, 6000);
         };
+
+        // Disable all css hover states on mobile devices
+        NoMobileHovers.removeHovers();
     }
     
     angular
         .module('jq2016Revamp')
-        .controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$anchorScroll', '$state', 'HamburgerMenu', 'Fixtures', HomeCtrl]);
+        .controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$anchorScroll', '$state', 'HamburgerMenu', 'Fixtures', 'NoMobileHovers', HomeCtrl]);
 })();
 
 // https://aqueous-lowlands-24334.herokuapp.com/inquiries

@@ -13,7 +13,7 @@
                 solution: '',
                 results: '',
                 conclusion: '',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'Normalize', 'Ionicons', 'Google Fonts', 'Font Awesome', 'Bootstrap', 'Animate.css', 'Firebase', 'Angular', 'jQuery', 'AngularFire', 'Angular UI Router', 'Angular Cookies', 'Git', 'Github', 'Heroku']
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Normalize', 'Ionicons', 'Google Fonts', 'Font Awesome', 'Bootstrap', 'Animate.css', 'Firebase', 'Angular', 'jQuery', 'AngularFire', 'Angular UI Router', 'Angular Cookies', 'Git', 'Github', 'Heroku', 'Responsive Design']
             },
             
             {
@@ -27,7 +27,7 @@
                 solution: '',
                 results: '',
                 conclusion: '',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Google Fonts', 'Ionicons', 'Font Awesome', 'Normalize', 'Animate.css', 'jQuery', 'Angular', 'Angular UI Router', 'Buzz', 'Firebase', 'AngularFire', 'Git', 'Github', 'Heroku']
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Google Fonts', 'Ionicons', 'Font Awesome', 'Normalize', 'Animate.css', 'jQuery', 'Angular', 'Angular UI Router', 'Buzz', 'Firebase', 'AngularFire', 'Git', 'Github', 'Heroku', 'Responsive Design']
             },
             
             {
@@ -41,7 +41,7 @@
                 solution: 'The solution to this problem is taking existing content on the web and centrally locating it in one place. Spotify, Bandsintown and Pitchfork are all integrated within The Music Project to help bring every piece together. All three of these companies house some of the largest libraries of information relative to music in existence today, helping to shape The Music Project into a very powerful tool to use.',
                 results: 'My friends were my main focus group for this. The feedback that I received was very positive. The app was depicted as very easy to use and a great tool to utilize.',
                 conclusion: 'One of the major lessons I took away from this project was that it is very easy, and time-consuming, to get carried away with adding more and more features to a web application. Next time I think I will limit the list of features to what is necessary and not desired. I learned a tremendous amount about API’s and working with arrays and hashes. I hadn’t realized just how easy it was to utilize an API with the power of Ruby on Rails. Google has become my best friend and greatest resource. I have been more active on StackOverflow as a result of this project, and overall much better at seeking out solutions to the endless sea of questions that I constantly try to tread water in. This experience has been eye-opening and truly valuable. I am nowhere near the developer I hope to be one day but I can say with confidence that I have grown immensely from this project and am well on my way toward my aspirations.',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Rails', 'jQuery', 'Bootstrap', 'Feedify.js', 'Geocomplete.js', 'Classie.js', 'Normalize', 'Animate.css', 'SCSS', 'Git', 'Github', 'Heroku', 'PostgreSQL', 'Devise Gem', 'Figaro Gem', 'HTTParty Gem', 'Carrierwave Gem', 'MiniMagick Gem', 'Mechanize Gem', 'Geocoder Gem', 'Spotify API', 'Bandsintown API']
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Rails', 'jQuery', 'Bootstrap', 'Feedify.js', 'Geocomplete.js', 'Classie.js', 'Normalize', 'Animate.css', 'SCSS', 'Git', 'Github', 'Heroku', 'PostgreSQL', 'Devise Gem', 'Figaro Gem', 'HTTParty Gem', 'Carrierwave Gem', 'MiniMagick Gem', 'Mechanize Gem', 'Geocoder Gem', 'Spotify API', 'Bandsintown API', 'Responsive Design']
             },
             
             {
@@ -55,7 +55,7 @@
                 solution: 'With Markitoff you can get your tasks done and stay motivated knowing that each task has a limited amount of time to be completed. This makes checking things off your todo list fun and ultimately makes you a better person.',
                 results: 'The results were quite positive. Although Markitoff is a very simple web application it was received well by the users that tested it.',
                 conclusion: 'Markitoff works because it helps to motivate you and organize your daily routine. I feel the rake automation greatly enhances the experience and prompts the user to try harder. This project has taught me a lot about Rails and has strengthened my fundamental knowledge as a web developer. I will surely carry forward this knowledge with me in the future.',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Github', 'Heroku']
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Github', 'Heroku', 'Responsive Design']
             },
             
             {
@@ -69,7 +69,7 @@
                 solution: '',
                 results: '',
                 conclusion: '',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Github']
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Github', 'Responsive Design']
             },
             
             {
@@ -83,7 +83,7 @@
                 solution: '',
                 results: '',
                 conclusion: '',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Github']
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Github', 'Responsive Design']
             },
             
             {
@@ -97,7 +97,7 @@
                 solution: 'WikiLand simplifies the process of sharing knowledge online. Users have the ability to publicly, as well as collaboratively, create and display wikis ranging from an endless possibility of topics.',
                 results: 'WikiLand has been proven to be simple and intuitive to use and is fully responsive.',
                 conclusion: 'The goal that was aimed to be accomplished with WikiLand was definitely achieved. The simplicity in its usability made for a powerful tool that anyone can use. As my first real project working with Rails it was easy to become overwhelmed at times because there was so much to absorb. However, as an aspiring developer I was pleasantly surprised with the intuitive nature that Rails revolves around. I have learned countless lessons and core fundamental development skills upon completing this project that will absolutely be recycled throughout my career.',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Github', 'Heroku']
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Git', 'Github', 'Heroku', 'Responsive Design']
             }
         ];
         

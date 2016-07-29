@@ -52,4 +52,15 @@
   .primary-navigation-opened .primary-navigation__inner {
     bottom: 450px;
   }
+
+  #work .item:hover img {
+    -webkit-transform: scale3d(1.01, 1.01, 1);
+    transform: scale3d(1.01, 1.01, 1);
+  }
+
+  #work .item:hover img,
+  #work .item:hover::before {
+      opacity: 1;
+      border: none;
+  }
 }
