@@ -261,6 +261,7 @@ ul.technologies_list {
 
 #feature .section img {
   display: block;
+  width: 100%;
 }
 
 #feature .section.margin .item.image {
