@@ -90,6 +90,12 @@
               .removeClass('bounceOut');
           }, 6000);
         };
+
+        $scope.addHeight = function() {
+          if ($scope.contactForm.$invalid) {
+            $('section#contact').css('height', '1060px');
+          }
+        };
     }
     
     angular
