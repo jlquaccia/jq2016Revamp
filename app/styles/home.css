@@ -860,12 +860,18 @@ section#contact {
 }
 
 /*---------------------------------------------------------*/
-/* Black and White Selfie 2 */
+/* About Me Selfie */
 /*---------------------------------------------------------*/
 
 .about_me_selfie {
     -webkit-filter: grayscale(100%) brightness(200%);
     filter: grayscale(100%) brightness(200%);
+    position: relative;
+    left: 25%;
+}
+
+.mobile_about_me_selfie {
+  display: none;
 }
 
 /*---------------------------------------------------------*/
