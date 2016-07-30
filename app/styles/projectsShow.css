@@ -389,3 +389,14 @@ ul.technologies_list {
     padding-top: 0 !important;
   }
 }
+
+/* Parallax */
+
+.project_content {
+    /*background-color: #FFE95C;*/
+    background-image: url(http://punksjumpup.co.uk/support/skins/shop/img/bg-pattern.jpg);
+    box-sizing: border-box;
+    min-height: 100%;
+    overflow: hidden;
+    padding-top: 150px
+}
