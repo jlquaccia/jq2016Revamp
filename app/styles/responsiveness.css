@@ -166,6 +166,10 @@
   p.help-block.phone_help_block {
     position: absolute;
   }
+
+  .home_banner p {
+    top: 30%;
+  }
 }
 
 /*---------------------------------------------------------*/
