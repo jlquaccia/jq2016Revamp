@@ -13,18 +13,18 @@
     <div class="module module-full">
       <h3 class="body-copy"><span>Life is a constant work in progress.  These posts are dedicated to those</span><span>works in progress AND just a few of my favorite things..</span></h3>
     </div>
-
+  </header>
+  
+  <section id="blog_posts" class="blog_section">
     <div ng-hide="posts.length" class="text-center faded ng_hide_override">
       <div class="load">
         <div class="load1"></div>
         <div class="load2"></div>
         <div class="load3"></div>
-        <small>loading...</small>
+        <small class="loader_text">loading...</small>
       </div>
     </div>
-  </header>
-  
-  <section id="blog_posts" class="blog_section">
+
     <div class="posts_wrapper" ng-repeat="post in posts | orderBy:'-created_at'">
       <h3 ng-class-odd="'time_ago_blog_was_posted_odd'" ng-class-even="'time_ago_blog_was_posted_even'">posted {{post.created_at | timeago}}</h3>
 
