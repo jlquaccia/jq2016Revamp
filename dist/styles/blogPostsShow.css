@@ -10,7 +10,7 @@
 }
 
 #feature .blog_post_content {
-  margin: 0;
+  margin: 0 0 150px !important;
 }
 
 small.time_since_blogpost_posted {
