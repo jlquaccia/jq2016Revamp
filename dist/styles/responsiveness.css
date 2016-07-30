@@ -307,4 +307,8 @@
   .social {
     font-size: 25px;
   }
+
+  #feature {
+    background-size: cover !important;
+  }
 }
