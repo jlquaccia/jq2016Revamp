@@ -197,6 +197,14 @@ ul.technologies_list {
   
 }
 
+.project_page_aside_mobile {
+  display: none;
+}
+
+.project_page_aside_desktop {
+  display: block;
+}
+
 /* === FEATURE === */
 #feature {
   background-attachment: fixed;
@@ -251,8 +259,7 @@ ul.technologies_list {
 }
 
 #feature .content {
-  /*background: #fff;*/
-  margin: 0 150px 0 -150px;
+  margin: 0 150px 150px -150px;
 }
 
 #feature .section img {
@@ -300,6 +307,7 @@ ul.technologies_list {
   letter-spacing: .005em;
   line-height: 24px;
   text-align: left;
+  margin-top: 10px;
 }
 
 #feature .item .static {

@@ -15,6 +15,27 @@
   .col-md-6.about_image {
     left: -60px;
   }
+
+  ul.technologies_list {
+    display: initial;
+  }
+
+  #feature .aside .inner {
+    padding: 10px 75px 30px;
+    margin-bottom: 150px;
+  }
+
+  #feature .content {
+    margin: 0 0 1px;
+  }
+
+  .project_page_aside_mobile {
+    display: block;
+  }
+
+  .project_page_aside_desktop {
+    display: none;
+  }
 }
 
 /*---------------------------------------------------------*/
@@ -97,6 +118,10 @@
   .contact_info_wrapper {
     bottom: -310px;
   }
+
+  #feature .aside .inner {
+    padding: 10px 30px 30px;
+  }
 }
 
 /*---------------------------------------------------------*/
@@ -170,6 +195,10 @@
   .home_banner p {
     top: 30%;
   }
+
+  #feature .current_project_title {
+    font-size: 26px;
+  }
 }
 
 /*---------------------------------------------------------*/
@@ -183,6 +212,14 @@
     left: 50%;
     border-bottom: 3px solid #fff;
     border-left: 3px solid #fff;
+  }
+
+  #feature .wrap .logo .logo-cont .vertical-aligner {
+    display: none;
+  }
+
+  #feature .wrap .logo .logo-cont {
+    padding: 60% 0;
   }
 }
 
