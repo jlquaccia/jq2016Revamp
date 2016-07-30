@@ -646,18 +646,25 @@ section#contact {
 /*---------------------------------------------------------*/
 
 .cf_name_error {
-    position: absolute;
-    top: 141px;
+  position: absolute;
+  top: 141px;
 }
 
 .cf_email_error {
-    float: right;
-    position: relative;
-    right: 183px;
+  /*float: right;*/
 }
 
 .cf_error .help-block {
   color: #FFE95C;
+}
+
+.email_group {
+  float: left;
+  width: 49%;
+}
+
+input.contact_email {
+  width: 100% !important;
 }
 
 /*---------------------------------------------------------*/

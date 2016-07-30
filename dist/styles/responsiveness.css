@@ -94,8 +94,8 @@
 /*---------------------------------------------------------*/
 
 @media (max-width: 650px) {
-  .home_banner p {
-    top: 35%;
+  .contact_info_wrapper {
+    bottom: -310px;
   }
 }
 
@@ -117,25 +117,55 @@
     width: 100%;
   }
 
-  input.form-control.contact_name, input.form-control.contact_email {
-    width: 100%;
-  }
-
-  input.form-control.contact_name {
-    margin-right: inherit;
-  }
-
   .contact_info_wrapper {
-    bottom: -280px;
+    bottom: -235px;
+    font-size: 10px;
   }
 
   .contact_form_inner_wrapper {
     margin-left: -25px;
   }
 
-  /*section#contact {
-    height: 1060px;
-  }*/
+  .cf_name_error,
+  .cf_email_error {
+    position: absolute;
+    left: 15px;
+  }
+
+  .cf_email_error {
+    top: 205px;
+  }
+
+  input.form-control.contact_name,
+  input.form-control.contact_email {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  input.form-control.contact_email {
+    margin-top: 10px;
+  }
+
+  input.form-control.contact_phone {
+    margin-top: 12px;
+  }
+
+  input.form-control.contact_name {
+    margin-right: inherit;
+  }
+
+  .email_group {
+    float: left;
+    width: 100%;
+  }
+
+  textarea.contact_message {
+    margin-top: 35px;
+  }
+
+  p.help-block.phone_help_block {
+    position: absolute;
+  }
 }
 
 /*---------------------------------------------------------*/
@@ -158,8 +188,29 @@
 
 @media (max-width: 450px) {
   .contact_info_wrapper {
-    bottom: -240px;
-    font-size: 10px;
+    bottom: -230px;
+  }
+}
+
+/*---------------------------------------------------------*/
+/* Max-Width: 413px */
+/*---------------------------------------------------------*/
+
+@media (max-width: 413px) {
+  .cf_name_error {
+    top: 174px;
+  }
+
+  .cf_email_error {
+    top: 236px;
+  }
+
+  .contact_info_wrapper {
+    bottom: -215px;
+  }
+
+  section#contact {
+    height: 1020px;
   }
 }
 
