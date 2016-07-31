@@ -75,7 +75,7 @@
       <p class="flash__body">Message Sent!</p>
     </div>
     
-    <div class="container-fluid main_wrapper blog_main">
+    <div class="container-fluid main_wrapper" ng-class="{'blog_main' : current === 'home' || current === 'posts' || current === 'project'}">
         <ui-view></ui-view>
     </div>
     

@@ -250,6 +250,7 @@ ul.technologies_list {
 
 #feature .current_project_title {
   background-color: #FFE95C;
+  font-size: 65px;
 }
 
 @media (max-width: 610px) {
@@ -390,6 +391,11 @@ ul.technologies_list {
   }
 }
 
+#feature article.content {
+  background: transparent;
+  padding: 0;
+}
+
 /* Parallax */
 
 .project_content {
@@ -398,5 +404,5 @@ ul.technologies_list {
     box-sizing: border-box;
     min-height: 100%;
     /*overflow: hidden;*/
-    padding-top: 150px
+    /*padding-top: 150px*/
 }
