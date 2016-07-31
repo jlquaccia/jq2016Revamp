@@ -214,7 +214,7 @@ ul.technologies_list {
 #feature .wrap {
   width: 100%;
   max-width: 1000px;
-  margin: auto;
+  margin: -200px auto 0;
   position: relative;
 }
 
