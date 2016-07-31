@@ -86,7 +86,8 @@ h1.page-title {
     margin-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 640px
+    max-width: 640px;
+    margin-top: 35px;
 }
 
 .featured-store .store-link a {

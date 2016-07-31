@@ -349,4 +349,12 @@
   small.time_since_blogpost_posted {
     top: -85px;
   }
+
+  .blog_title {
+    padding: 5px 20px;
+  }
+
+  .blog_stars {
+    display: none;
+  }
 }
