@@ -307,4 +307,16 @@
   .social {
     font-size: 25px;
   }
+
+  #feature .current_project_title {
+    font-size: 35px;
+  }
+
+  .wrap .logo .logo-cont {
+    padding: 100% 0;
+  }
+
+  small.time_since_blogpost_posted {
+    top: -85px;
+  }
 }
