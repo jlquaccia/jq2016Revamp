@@ -16,6 +16,12 @@
 small.time_since_blogpost_posted {
   background-color: #fff;
   position: relative;
-  top: -250px;
+  top: -175px;
   padding: 5px;
+  font-size: 20px;
+}
+
+#feature article.blog_post_mb {
+  min-height: 0;
+  margin: 0 0 150px 0;
 }

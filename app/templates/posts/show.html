@@ -1,11 +1,12 @@
 <!-- To go back to the way the bg_img originally was: -->
 <!-- 1.) Delete the blog_post_bg_img class 2.) Change style of #feature back to background-image: url(http://punksjumpup.co.uk/support/skins/shop/img/bg-pattern.jpg); -->
 
-<div class="project_wrapper" id="project_top">
-  <div class="blog_post_bg_img"></div>
-  <div id="feature" style="background-color: transparent; overflow: hidden;">
+<div class="project_wrapper blog_main blog_post_content" id="project_top">
+  <!-- <div class="blog_post_bg_img"></div> -->
+  <div id="feature">
+    <!--  style="background-color: transparent; overflow: hidden;" -->
     <div class="wrap">
-      <div class="logo offset" style="padding-top: 646px;">
+      <div class="logo offset blog_header" style="padding-top: 646px;">
         <div class="logo-cont">
           <span class="vertical-aligner"></span>
           <div class="title_wrapper">
@@ -13,11 +14,12 @@
           </div>
           <span class="vertical-aligner"></span>
         </div>
+
+        <div class="text-center">
+          <small class="time_since_blogpost_posted">posted {{post.created_at | timeago}}</small>
+        </div>
       </div>
-      <div class="text-center">
-        <small class="time_since_blogpost_posted">posted {{post.created_at | timeago}}</small>
-      </div>
-      <article class="content blog_post_content">
+      <article class="content blog_post_mb blog_section">
         <div class="section">
           <div class="item image">
             <img src="{{post.image_url}}" />

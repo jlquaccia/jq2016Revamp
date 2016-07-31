@@ -399,10 +399,13 @@ ul.technologies_list {
 /* Parallax */
 
 .project_content {
-    /*background-color: #FFE95C;*/
     background-image: url(http://punksjumpup.co.uk/support/skins/shop/img/bg-pattern.jpg);
     box-sizing: border-box;
     min-height: 100%;
-    /*overflow: hidden;*/
-    /*padding-top: 150px*/
+}
+
+.blog_post_content {
+    background-image: url(/assets/images/bw_bg_2.png);
+    box-sizing: border-box;
+    min-height: 100%;
 }
