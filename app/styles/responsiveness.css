@@ -36,6 +36,10 @@
   .project_page_aside_desktop {
     display: none;
   }
+
+  .store-description {
+    width: 90%;
+  }
 }
 
 /*---------------------------------------------------------*/
@@ -96,6 +100,10 @@
     position: relative;
     top: -20px;
   }
+
+  .module-full {
+    width: 90%;
+  }
 }
 
 /*---------------------------------------------------------*/
@@ -129,6 +137,19 @@
 
   .wrap .logo .logo-cont {
     padding: 60% 0;
+  }
+
+  .blog_post_odd,
+  .blog_post_even {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .store-link {
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: -20px;
   }
 }
 
@@ -220,6 +241,15 @@
     left: 50%;
     border-bottom: 3px solid #fff;
     border-left: 3px solid #fff;
+  }
+
+  h3.time_ago_blog_was_posted_odd,
+  h3.time_ago_blog_was_posted_even {
+    font-size: 15px;
+  }
+
+  .store-description {
+    width: 100%;
   }
 }
 

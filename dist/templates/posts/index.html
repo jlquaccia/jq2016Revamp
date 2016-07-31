@@ -24,30 +24,33 @@
         <small class="loader_text">loading...</small>
       </div>
     </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="posts_wrapper" ng-repeat="post in posts | orderBy:'-created_at'">
+          <h3 ng-class-odd="'time_ago_blog_was_posted_odd'" ng-class-even="'time_ago_blog_was_posted_even'">posted {{post.created_at | timeago}}</h3>
 
-    <div class="posts_wrapper" ng-repeat="post in posts | orderBy:'-created_at'">
-      <h3 ng-class-odd="'time_ago_blog_was_posted_odd'" ng-class-even="'time_ago_blog_was_posted_even'">posted {{post.created_at | timeago}}</h3>
+          <div class="module module-full featured-store" ng-class-odd="'blog_post_odd'" ng-class-even="'blog_post_even'">
+            
+            <!-- Refer to comment below to reach a relative posts edit page -->
+            <!-- <a class="store-image" data-nagios-track="" ui-sref="edit({id: post.id})"> -->
 
-      <div class="module module-full featured-store" ng-class-odd="'blog_post_odd'" ng-class-even="'blog_post_even'">
-        
-        <!-- Refer to comment below to reach a relative posts edit page -->
-        <!-- <a class="store-image" data-nagios-track="" ui-sref="edit({id: post.id})"> -->
+            <a class="store-image" ui-sref="show({id: post.id})">
+              <img class="desktop-image img-responsive" src="{{post.image_url}}">
+            </a>
 
-        <a class="store-image" ui-sref="show({id: post.id})">
-          <img class="desktop-image img-responsive" src="{{post.image_url}}">
-          <div class="overlay-icon view-icon -thumb"></div>
-        </a>
-
-        <div class="store-content">
-          <div class="store-content-wrapper">
-            <div class="store-title">{{post.title}}</div>
-            <div class="store-description">{{post.description}}</div>
-          </div>
-          <div class="store-more-info">
-            <a class="show-modal" href="https://www.bigcartel.com/examples/#windingwheelsupply"></a>
-          </div>
-          <div class="store-link">
-            <a ui-sref="show({id: post.id})"><span>Read</span></a>
+            <div class="store-content">
+              <div class="store-content-wrapper">
+                <div class="store-title">{{post.title}}</div>
+                <div class="store-description">{{post.description}}</div>
+              </div>
+              <div class="store-more-info">
+                <a class="show-modal" href="https://www.bigcartel.com/examples/#windingwheelsupply"></a>
+              </div>
+              <div class="store-link">
+                <a ui-sref="show({id: post.id})"><span>Read</span></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
