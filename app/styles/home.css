@@ -915,4 +915,8 @@ input.contact_email {
     #all_browsers_but_ff_selfie {
       display: none;
     }
+
+    .primary-navigation__inner-item:focus {
+      outline: none;
+    }
 }
