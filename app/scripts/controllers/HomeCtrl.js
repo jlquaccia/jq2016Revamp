@@ -67,10 +67,6 @@
           $('.blog_main').css('overflow-x', 'hidden');
         };
 
-        $rootScope.setOverflowXToInitial = function() {
-          $('.blog_main').css('overflow-x', 'initial');
-        };
-
         $rootScope.flashMessage = function() {
           $('.flash_message').addClass('bounceIn');
 

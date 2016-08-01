@@ -47,22 +47,22 @@
       <div class="primary-navigation__outer">
         <nav class="primary-navigation__inner animated">
           <!-- Home -->
-          <a ng-show="current === 'home'" class="primary-navigation__inner-item primary-navigation__inner-item--current smoothScroll" href="#home_top" title="Home" ng-click="toggleMenu(); overflowXHidden(); setOverflowXToInitial()">Home</a>
-          <a ng-show="current === 'posts' || current === 'project' || current === 'show'" class="primary-navigation__inner-item primary-navigation__inner-item--current" ui-sref="home" title="Home" ng-click="toggleMenu(); scrollToTop(); overflowXHidden(); setOverflowXToInitial()">Home</a>
+          <a ng-show="current === 'home'" class="primary-navigation__inner-item primary-navigation__inner-item--current smoothScroll" href="#home_top" title="Home" ng-click="toggleMenu();">Home</a>
+          <a ng-show="current === 'posts' || current === 'project' || current === 'show'" class="primary-navigation__inner-item primary-navigation__inner-item--current" ui-sref="home" title="Home" ng-click="toggleMenu(); scrollToTop();">Home</a>
           
           <!-- Projects -->
-          <a ng-show="current === 'home' || current === 'projects'" class="primary-navigation__inner-item smoothScroll" href="#projects" title="Projects" ng-click="toggleMenu(); setOverflowXToInitial()">Projects</a>
-          <a ng-show="current === 'posts' || current === 'project' || current === 'show'" class="primary-navigation__inner-item" ui-sref="projects" title="Projects" ng-click="toggleMenu(); setOverflowXToInitial()">Projects</a>
+          <a ng-show="current === 'home' || current === 'projects'" class="primary-navigation__inner-item smoothScroll" href="#projects" title="Projects" ng-click="toggleMenu();">Projects</a>
+          <a ng-show="current === 'posts' || current === 'project' || current === 'show'" class="primary-navigation__inner-item" ui-sref="projects" title="Projects" ng-click="toggleMenu();">Projects</a>
           
           <!-- About -->
-          <a ng-show="current === 'home' || current === 'about'" class="primary-navigation__inner-item smoothScroll" href="#about" title="About" ng-click="toggleMenu(); setOverflowXToInitial()">About</a>
-          <a ng-show="current === 'posts' || current === 'project' || current === 'show'" class="primary-navigation__inner-item" ui-sref="about" title="About" ng-click="toggleMenu(); setOverflowXToInitial()">About</a>
+          <a ng-show="current === 'home' || current === 'about'" class="primary-navigation__inner-item smoothScroll" href="#about" title="About" ng-click="toggleMenu();">About</a>
+          <a ng-show="current === 'posts' || current === 'project' || current === 'show'" class="primary-navigation__inner-item" ui-sref="about" title="About" ng-click="toggleMenu();">About</a>
 
           <!-- Contact -->
-          <a ng-show="current === 'home' || current === 'contact'" class="primary-navigation__inner-item smoothScroll" href="#contact" title="Contact" ng-click="toggleMenu(); setOverflowXToInitial()">Contact</a>
-          <a ng-show="current === 'posts' || current === 'project' || current === 'show'" class="primary-navigation__inner-item" ui-sref="contact" title="Contact" ng-click="toggleMenu(); setOverflowXToInitial()">Contact</a>
+          <a ng-show="current === 'home' || current === 'contact'" class="primary-navigation__inner-item smoothScroll" href="#contact" title="Contact" ng-click="toggleMenu();">Contact</a>
+          <a ng-show="current === 'posts' || current === 'project' || current === 'show'" class="primary-navigation__inner-item" ui-sref="contact" title="Contact" ng-click="toggleMenu();">Contact</a>
 
-          <a class="primary-navigation__inner-item" ui-sref="posts" title="Blog" ng-click="toggleMenu(); overflowXHidden(); setOverflowXToHidden()">Blog</a>
+          <a class="primary-navigation__inner-item" ui-sref="posts" title="Blog" ng-click="toggleMenu(); setOverflowXToHidden()">Blog</a>
         </nav>
       </div>
     </div>
