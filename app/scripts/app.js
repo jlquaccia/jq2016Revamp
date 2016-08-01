@@ -70,6 +70,6 @@
     }
     
     angular
-        .module('jq2016Revamp', ['ui.router', 'ngResource', 'ngtimeago'])
+        .module('jq2016Revamp', ['ui.router', 'ngResource', 'ngtimeago', 'jlareau.bowser'])
         .config(config);
 })();

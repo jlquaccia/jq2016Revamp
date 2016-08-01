@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl($scope, $rootScope, $location, $anchorScroll, $state, HamburgerMenu, Fixtures) {
+    function HomeCtrl($scope, $rootScope, $location, $anchorScroll, $state, HamburgerMenu, Fixtures, bowser) {
         // Hamburger Icon Animation
         $rootScope.toggleMenu = function() {
             HamburgerMenu.toggleMenu();
@@ -46,7 +46,7 @@
         console.log($rootScope.current);
 
 
-        if ($rootScope.current === 'home') {
+        if ($rootScope.current === 'home' && !bowser.firefox) {
           $('.smoothScroll').click(function() {
             $('.blog_main').css('overflow-x', 'initial');
 
@@ -96,7 +96,7 @@
     
     angular
         .module('jq2016Revamp')
-        .controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$anchorScroll', '$state', 'HamburgerMenu', 'Fixtures', HomeCtrl]);
+        .controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$anchorScroll', '$state', 'HamburgerMenu', 'Fixtures', 'bowser', HomeCtrl]);
 })();
 
 // https://aqueous-lowlands-24334.herokuapp.com/inquiries
