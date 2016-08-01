@@ -810,6 +810,7 @@ input.contact_email {
     transition: all .5s;
     z-index: 9999;
     -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
 }
 
 .primary-navigation__inner-item {
@@ -911,5 +912,10 @@ input.contact_email {
 
     #all_browsers_but_ff_selfie {
       display: none;
+    }
+
+    .primary-navigation__inner {
+      position: relative;
+      bottom: 600px;
     }
 }
