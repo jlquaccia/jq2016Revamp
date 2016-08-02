@@ -361,4 +361,12 @@
   .blog_stars {
     display: none;
   }
+
+  section#blog_posts {
+    margin-top: -50px;
+  }
+
+  #feature .section.margin .item.image {
+    padding: 40px 20px;
+  }
 }
