@@ -363,10 +363,14 @@
   }
 
   section#blog_posts {
-    margin-top: -50px;
+    margin-top: -65px;
   }
 
   #feature .section.margin .item.image {
     padding: 40px 20px;
+  }
+
+  .flash_message {
+    left: 5px;
   }
 }
