@@ -20,7 +20,7 @@
       $anchorScroll();
     };
 
-    // Safari compatibility
+    // Safari Compatibility
     if (bowser.safari) {
       $('#feature .current_project_title').css('font-size', '40px');
       $('.blog_section').css('min-height', 'inherit');

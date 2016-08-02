@@ -1,5 +1,5 @@
 (function() {
-  function PostListCtrl($scope, $rootScope, $http, $resource, $state, $anchorScroll, Posts, Post, HamburgerMenu) {
+  function PostListCtrl($scope, $rootScope, $http, $resource, $state, $anchorScroll, Posts, Post, HamburgerMenu, bowser) {
     $scope.posts = Posts.query();
     
     $scope.deletePost = function(postId) {
@@ -23,9 +23,14 @@
 
     $rootScope.current = $state.current.name;
     console.log($rootScope.current);
+
+    // Firefox Compatibility
+    if (bowser.firefox || bowser.safari) {
+      $('.blog_header').css('transform', 'none');
+    }
   }
   
   angular
     .module('jq2016Revamp')
-    .controller('PostListCtrl', ['$scope', '$rootScope', '$http', '$resource', '$state', '$anchorScroll', 'Posts', 'Post', 'HamburgerMenu', PostListCtrl]);
+    .controller('PostListCtrl', ['$scope', '$rootScope', '$http', '$resource', '$state', '$anchorScroll', 'Posts', 'Post', 'HamburgerMenu', 'bowser', PostListCtrl]);
 })();
