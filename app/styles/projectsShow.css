@@ -103,7 +103,7 @@ a {
 }
 
 a:hover {
-  color: #ff6d00;
+  color: #000;
 }
 
 /* === BASE === */
@@ -179,6 +179,7 @@ body {
   background: #FFE95C;
   padding: 50px 20px;
   width: 300px;
+  margin-top: -56px;
 }
 
 .offset {
@@ -394,6 +395,22 @@ ul.technologies_list {
 #feature article.content {
   background: transparent;
   padding: 0;
+}
+
+aside.aside.offset.project_page_aside_desktop {
+  padding-top: 701px !important;
+}
+
+small.time_since_blogpost_posted.view_project {
+  top: 0;
+  padding: 0;
+  background-color: #FFE95C;
+}
+
+.text-center.view_project_link_wrapper {
+  background-color: #FFE95C;
+  margin-top: 1px;
+  padding: 15px;
 }
 
 /* Parallax */

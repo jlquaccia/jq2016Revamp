@@ -23,6 +23,7 @@
   #feature .aside .inner {
     padding: 10px 75px 30px;
     margin-bottom: 150px;
+    margin-top: 1px;
   }
 
   #feature .content {
