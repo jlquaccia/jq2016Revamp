@@ -1,5 +1,5 @@
 (function() {
-  function ProjectShowCtrl($scope, $state, $rootScope, $anchorScroll, $location, Fixtures, HamburgerMenu) {
+  function ProjectShowCtrl($scope, $state, $rootScope, $anchorScroll, $location, Fixtures, HamburgerMenu, bowser) {
     $scope.currentProject = Fixtures.getProject($state.params.id);
     $rootScope.current = $state.current.name;
 
@@ -19,9 +19,15 @@
       $location.hash('project_top');
       $anchorScroll();
     };
+
+    // Safari compatibility
+    if (bowser.safari) {
+      $('#feature .current_project_title').css('font-size', '40px');
+      $('.blog_section').css('min-height', 'inherit');
+    }
   }
 
   angular
     .module('jq2016Revamp')
-    .controller('ProjectShowCtrl', ['$scope', '$state', '$rootScope', '$anchorScroll', '$location', 'Fixtures', 'HamburgerMenu', ProjectShowCtrl]);
+    .controller('ProjectShowCtrl', ['$scope', '$state', '$rootScope', '$anchorScroll', '$location', 'Fixtures', 'HamburgerMenu', 'bowser', ProjectShowCtrl]);
 })();

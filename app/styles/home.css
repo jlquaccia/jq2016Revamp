@@ -540,7 +540,7 @@ section#about {
 #contact form textarea,
 #contact form button {
     border-radius: 0;
-    border: none;*/
+    border: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -886,37 +886,4 @@ input.contact_email {
 
 .mobile_about_me_selfie {
   display: none;
-}
-
-/*---------------------------------------------------------*/
-/* Cross Browser Compatibility */
-/*---------------------------------------------------------*/
-
-/* This will work for firefox only */
-@-moz-document url-prefix() {
-    .selfie_1 {
-        width: 450px;
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-        -webkit-clip-path: circle(50% at 50% 75%);
-        clip-path: circle(50% at 50% 50%);
-        -webkit-filter: grayscale(100%) brightness(175%);
-        filter: grayscale(100%) brightness(175%);
-    }
-
-    #firefox_selfie {
-        position: absolute;
-        bottom: 0;
-        margin: -7px;
-        display: block;
-    }
-
-    #all_browsers_but_ff_selfie {
-      display: none;
-    }
-
-    .primary-navigation__inner-item:focus {
-      outline: none;
-    }
 }

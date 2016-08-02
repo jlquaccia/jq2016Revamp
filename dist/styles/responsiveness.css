@@ -251,6 +251,10 @@
   .store-description {
     width: 100%;
   }
+
+  .blog_section {
+    min-height: inherit;
+  }
 }
 
 /*---------------------------------------------------------*/
