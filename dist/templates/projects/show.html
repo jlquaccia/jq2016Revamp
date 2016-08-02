@@ -22,7 +22,7 @@
       <article class="content blog_section safari_section">
         <div class="section">
           <div class="item image">
-            <img src="{{currentProject.imageUrl}}" />
+            <img src="{{currentProject.imageUrl2}}" />
           </div>
         </div>
         <div class="text-center view_project_link_wrapper">
@@ -36,19 +36,19 @@
             <p>{{currentProject.summary}}</p>
           </div>
         </div>
-        <div class="section margin text-right">
+        <div ng-show="currentProject.explanation" class="section margin text-right">
           <div class="item image">
             <h1>Explanation</h1>
             <p>{{currentProject.explanation}}</p>
           </div>
         </div>
-        <div class="section margin">
+        <div ng-show="currentProject.problem" class="section margin">
           <div class="item image">
             <h1>Problem</h1>
             <p>{{currentProject.problem}}</p>
           </div>
         </div>
-        <div class="section margin text-right">
+        <div ng-show="currentProject.solution" class="section margin text-right">
           <div class="item image">
             <h1>Solution</h1>
             <p>{{currentProject.solution}}</p>
@@ -56,16 +56,16 @@
         </div>
         <div class="section margin_gap">
           <div class="item image">
-            <img src="https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/the-music-project.png" />
+            <img src="{{currentProject.imageUrl3}}" />
           </div>
         </div>
-        <div class="section margin margin_gap">
+        <div ng-show="currentProject.results" class="section margin margin_gap">
           <div class="item image">
             <h1>Results</h1>
             <p>{{currentProject.results}}</p>
           </div>
         </div>
-        <div class="section margin text-right">
+        <div ng-show="currentProject.conclusion" class="section margin text-right">
           <div class="item image">
             <h1>Conclusion</h1>
             <p>{{currentProject.conclusion}}</p>
