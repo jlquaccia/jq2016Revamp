@@ -19,7 +19,7 @@
 
         $scope.submitMessage = function() {
             if ($scope.contactForm.$valid) {
-                $.post('http://localhost:4000/inquiries',
+                $.post('https://aqueous-lowlands-24334.herokuapp.com/inquiries',
                   {
                     inquiry: {
                       name: $scope.name, email: $scope.email, phone_number: $scope.phone_number, message: $scope.message
@@ -45,7 +45,7 @@
 
         console.log($rootScope.current);
 
-
+        // Smooth Scroll
         if ($rootScope.current === 'home' && !bowser.firefox) {
           $('.smoothScroll').click(function() {
             $('.blog_main').css('overflow-x', 'initial');
