@@ -856,8 +856,8 @@ input.contact_email {
     position: absolute;
     bottom: 0;
     z-index: -1;
-    -webkit-clip-path: circle(50% at 50% 75%);
-    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 73%);
+    clip-path: circle(50% at 50% 73%);
     -webkit-filter: grayscale(100%) brightness(175%);
     filter: grayscale(100%) brightness(175%);
 }
