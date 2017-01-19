@@ -4,6 +4,40 @@
         var projects = [
             {
                 id: '1',
+                urlTitle: 'Spotlight',
+                title: 'Spotlight',
+                imageUrl: 'https://s3-us-west-1.amazonaws.com/jason-quaccia-spotlight/spotlight-four.png',
+                imageUrl2: 'https://s3-us-west-1.amazonaws.com/jason-quaccia-spotlight/spotlight-one.png',
+                imageUrl3: 'https://s3-us-west-1.amazonaws.com/jason-quaccia-spotlight/spotlight-two.png',
+                projectUrl: 'http://www.sblob.com/spotlight/999',
+                summary: 'Spotlight is a sub section of SBLOB where artists of various backgrounds and professions are showcased.',
+                explanation: 'Spotlight provides a central location for an artist to showcase all of there work, tell their story and link to all of their social media accounts',
+                problem: 'Artists of all kinds (music, photography, animation, etc.) don\'t have a central online presence to house all of their work and media associated with them.  There are also not many platforms online that allow a user extensive profile customization.',
+                solution: 'Spotlight is a project that allows artists to showcase all of their work and information in one place and also link to any external sites that house any additional online presence.  Spotlight profiles are also very customizable.  Allowing each artist a significant amount of creative freedom to display their profile in a manner that maintains the integrity of their personality much more efficiently.',
+                results: 'Currently Spotlight is still very much in an infant stage, but artists who have already been reached out to to join the site have received it quite well.  They have enjoyed the freedom of expression and convenience of keeping all of their content in one place.',
+                conclusion: 'Spotlight is currently being passed around and tested by new artists who are unfamiliar with the site to gain feedback and outside perception.  This is the first draft of the project and the first live presence of SBLOB in general to be put out into the wild wild internet.',
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Angular', 'jQuery', 'Git', 'Github', 'Responsive Design', 'Node.js', 'Express.js', 'MySql']
+            },
+
+            {
+                id: '2',
+                urlTitle: 'BlocTime',
+                title: 'Bloc Time',
+                imageUrl: 'https://s3-us-west-1.amazonaws.com/jason-quaccia-bloctime/bloctime-five.png',
+                imageUrl2: 'https://s3-us-west-1.amazonaws.com/jason-quaccia-bloctime/bloctime-one.png',
+                imageUrl3: 'https://s3-us-west-1.amazonaws.com/jason-quaccia-bloctime/bloctime-four.png',
+                projectUrl: 'https://jason-quaccia-bloctime.herokuapp.com/',
+                summary: 'Bloc Time is a single page app powered by Angular.js that utilizes the pomodoro technique to help make anyones\' day more productive',
+                explanation: 'This app helps to make the end users\' day more efficient by splitting up their day into separate pomodoro\'s.  During each pomodoro (25 minutes) a user will work on whatever task is at hand.  Then a 5 minute break will follow, followed by the start of another 25 minute pomodoro.  This cycle continues throughout the day and is a system that has been proven to be an effective technique to boost productivity through allowing frequent small breaks throughout the day.',
+                problem: 'Most people tend to mismanage their time when working during the day to optimize productive efficiency.  Some work too hard with seldom breaks, where some spend a greater emphasis on breaktime then they should.',
+                solution: 'The pomodoro technique provides for a more structured way to productively spend your time during the day as well as a unit of measure to know just how much you\'ve done (i.e. number of pomodoro\'s completed).  It has been proven that small 5 minute breaks after 25 minutes stretches from work keeps your mind much more sharp and ultimately productive versus overworking yourself and not taking enough breaks.',
+                results: 'The results are a more productive and efficient day!',
+                conclusion: 'This project was a great learning curve for me.  Utilizing Angular for the bulk of the project, I exercised a lot of complex conditional logic that relied various different states throughout the app.',
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Normalize', 'Ionicons', 'Google Fonts', 'Font Awesome', 'Bootstrap', 'Animate.css', 'Firebase', 'Angular', 'jQuery', 'AngularFire', 'Angular UI Router', 'Git', 'Github', 'Heroku', 'Responsive Design']
+            },
+
+            {
+                id: '3',
                 urlTitle: 'BlocChat',
                 title: 'Bloc Chat',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/bloc_chat.png',
@@ -20,7 +54,7 @@
             },
             
             {
-                id: '2',
+                id: '4',
                 urlTitle: 'BlocJams',
                 title: 'Bloc Jams',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/bloc_jams.png',
@@ -37,7 +71,7 @@
             },
             
             {
-                id: '3',
+                id: '5',
                 urlTitle: 'TheMusicProject',
                 title: 'The Music Project',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/artist_recommendations.png',
@@ -54,7 +88,7 @@
             },
             
             {
-                id: '4',
+                id: '6',
                 urlTitle: 'Markitoff',
                 title: 'Markitoff',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/markitoff.png',
@@ -71,7 +105,7 @@
             },
             
             {
-                id: '5',
+                id: '7',
                 urlTitle: 'SimplyPutYourWay',
                 title: 'Simply Put Your Way',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/simply-put-your-way.png',
@@ -80,35 +114,6 @@
                 projectUrl: 'http://jlquaccia.github.io/simply-put-your-way',
                 summary: 'Simply Put Your Way is a business dedicated to home organization. For some extra practice I chose to code up all of the front-end for the site. I utilized HTML, SCSS, Bootstrap and Animate.css. The entire mockup is fully responsive as well. This project was the first that I worked on where I really got to know the fundamentals of Twitter’s Bootstrap and it’s inner workings.',
                 technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Normalize', 'Animate.css', 'jQuery', 'Git', 'Github', 'Responsive Design']
-            },
-            
-            {
-                id: '6',
-                urlTitle: 'FestivalQuiz',
-                title: 'Festival Quiz',
-                imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/festival-quiz.png',
-                imageUrl2: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/festival-quiz2.png',
-                imageUrl3: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/festival-quiz3.png',
-                projectUrl: 'http://jlquaccia.github.io/festival-quiz',
-                summary: 'Do you even festival? Inspired by true ‘festival-related’ events, I decided to have a little fun and test the trivial knowledge of others on the subject. Powered by lots of jQuery and JavaScript, it was an interesting experience putting this one together. Being that this was one of my very first projects I can say that I definitely learned a lot of web development fundamentals including a thing or two I hadn’t already known about these festival things.',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Google Fonts', 'jQuery', 'Git', 'Github', 'Responsive Design']
-            },
-            
-            {
-                id: '7',
-                urlTitle: 'Wikiland',
-                title: 'Wikiland',
-                imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/wikiland.png',
-                imageUrl2: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/wikiland2.png',
-                imageUrl3: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/wikiland3.png',
-                projectUrl: 'https://jason-quaccia-blocipedia.herokuapp.com',
-                summary: 'Wikipedia is universal, and to be able to build a replica for one of my first projects is incredible. WikiLand allows users to create and collaborate on their own wikis privately or publicly. This was a school project that I built while enrolled in Bloc Inc.’s full-stack web developer track.',
-                explanation: 'I built WikiLand from the ground up. The amount of learning that took place within the span of starting and finishing this project is irreplaceable. With Ruby on Rails powering the core, I have been able to tackle and strengthen my skill-set on various web development topics. I have learned to incorporate user authentication with the Devise gem, as well as establishing wikis that can be created, read, updated and deleted. I’ve also overcome challenges of designating various user roles by utilizing different authorization scopes via the Pundit gem and also incorporated Stripe to allow upgrading from a free plan to a premium one. Wikis can be set to private, be made collaborative (premium accounts only) and are created and editable with the option of using markdown syntax thanks to the Redcarpet gem.',
-                problem: 'The internet is a place rich with knowledge which is also easily accessible. By design, the web was created in order to connect the world together and share this knowledge with one another. Knowledge should be made universal, because as a human race we all face the same life challenges. Through shared information from all around there is no telling what answers we may find.',
-                solution: 'WikiLand simplifies the process of sharing knowledge online. Users have the ability to publicly, as well as collaboratively, create and display wikis ranging from an endless possibility of topics.',
-                results: 'WikiLand has been proven to be simple and intuitive to use and is fully responsive.',
-                conclusion: 'The goal that was aimed to be accomplished with WikiLand was definitely achieved. The simplicity in its usability made for a powerful tool that anyone can use. As my first real project working with Rails it was easy to become overwhelmed at times because there was so much to absorb. However, as an aspiring developer I was pleasantly surprised with the intuitive nature that Rails revolves around. I have learned countless lessons and core fundamental development skills upon completing this project that will absolutely be recycled throughout my career.',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'EpicEditorJS', 'PostgreSQL', 'Sqlite3', 'SCSS', 'Devise Gem', 'Figaro Gem', 'Pundit Gem', 'Faker Gem', 'Stripe Gem', 'Redcarpet Gem', 'Haml', 'Friendly ID Gem', 'Git', 'Github', 'Heroku', 'Responsive Design']
             }
         ];
         
