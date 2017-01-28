@@ -103,7 +103,7 @@
                 solution: 'The solution to this problem is taking existing content on the web and centrally locating it in one place. Spotify, Bandsintown and Pitchfork are all integrated within The Music Project to help bring every piece together. All three of these companies house some of the largest libraries of information relative to music in existence today, helping to shape The Music Project into a very powerful tool to use.',
                 results: 'My friends were my main focus group for this. The feedback that I received was very positive. The app was depicted as very easy to use and a great tool to utilize.',
                 conclusion: 'One of the major lessons I took away from this project was that it is very easy, and time-consuming, to get carried away with adding more and more features to a web application. Next time I think I will limit the list of features to what is necessary and not desired. I learned a tremendous amount about API’s and working with arrays and hashes. I hadn’t realized just how easy it was to utilize an API with the power of Ruby on Rails. Google has become my best friend and greatest resource. I have been more active on StackOverflow as a result of this project, and overall much better at seeking out solutions to the endless sea of questions that I constantly try to tread water in. This experience has been eye-opening and truly valuable. I am nowhere near the developer I hope to be one day but I can say with confidence that I have grown immensely from this project and am well on my way toward my aspirations.',
-                technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Rails', 'jQuery', 'Bootstrap', 'Feedify.js', 'Geocomplete.js', 'Classie.js', 'Normalize', 'Animate.css', 'SCSS', 'Git', 'Github', 'Heroku', 'PostgreSQL', 'Sqlite3', 'SCSS', 'Devise Gem', 'Figaro Gem', 'HTTParty Gem', 'Carrierwave Gem', 'MiniMagick Gem', 'Mechanize Gem', 'Geocoder Gem', 'Spotify API', 'Bandsintown API', 'Responsive Design']
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Rails', 'jQuery', 'Bootstrap', 'Feedify.js', 'Geocomplete.js', 'Classie.js', 'Normalize', 'Animate.css', 'Git', 'Github', 'Heroku', 'PostgreSQL', 'Sqlite3', 'SCSS', 'Devise Gem', 'Figaro Gem', 'HTTParty Gem', 'Carrierwave Gem', 'MiniMagick Gem', 'Mechanize Gem', 'Geocoder Gem', 'Spotify API', 'Bandsintown API', 'Responsive Design']
             },
             
             {
@@ -125,7 +125,7 @@
             },
             
             {
-                id: '8s',
+                id: '8',
                 urlTitle: 'SimplyPutYourWay',
                 title: 'Simply Put Your Way',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/simply-put-your-way.png',
