@@ -4,6 +4,19 @@
         var projects = [
             {
                 id: '1',
+                urlTitle: 'AngelaSha',
+                title: 'Angela Sha',
+                imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/angela_sha_1.png',
+                imageUrl2: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/angela_sha_6.png',
+                imageUrl3: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/angela_sha_3.png',
+                projectUrl: 'https://angelas-website.herokuapp.com',
+                summary: 'Angela Sha is a pole dance performer and instructor.',
+                results: 'With the need for a new website for Angela, I designed and developed a single page site for her that mainly runs on AngularJS.  I\'m particularly pleased with the way the masonry style photo gallery and lightbox turned out.  The design was completely original and fully responsive along with the rest of the site.',
+                technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Angular', 'jQuery', 'Git', 'Github', 'Responsive Design', 'Cross-Browser Compatitble', 'Google Maps API']
+            },
+
+            {
+                id: '2',
                 urlTitle: 'Spotlight',
                 title: 'Spotlight',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jason-quaccia-spotlight/spotlight-four.png',
@@ -20,7 +33,7 @@
             },
 
             {
-                id: '2',
+                id: '3',
                 urlTitle: 'BlocTime',
                 title: 'Bloc Time',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jason-quaccia-bloctime/bloctime-five.png',
@@ -37,7 +50,7 @@
             },
 
             {
-                id: '3',
+                id: '4',
                 urlTitle: 'BlocChat',
                 title: 'Bloc Chat',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/bloc_chat.png',
@@ -54,7 +67,7 @@
             },
             
             {
-                id: '4',
+                id: '5',
                 urlTitle: 'BlocJams',
                 title: 'Bloc Jams',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/bloc_jams.png',
@@ -71,7 +84,7 @@
             },
             
             {
-                id: '5',
+                id: '6',
                 urlTitle: 'TheMusicProject',
                 title: 'The Music Project',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/artist_recommendations.png',
@@ -88,7 +101,7 @@
             },
             
             {
-                id: '6',
+                id: '7',
                 urlTitle: 'Markitoff',
                 title: 'Markitoff',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/markitoff.png',
@@ -105,7 +118,7 @@
             },
             
             {
-                id: '7',
+                id: '8s',
                 urlTitle: 'SimplyPutYourWay',
                 title: 'Simply Put Your Way',
                 imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/simply-put-your-way.png',
