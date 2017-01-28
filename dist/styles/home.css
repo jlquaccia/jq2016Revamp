@@ -458,6 +458,10 @@ html, body {
     border: none;
 }
 
+#projects img.mobile {
+  display: none;
+}
+
 /* Responsiveness */
 /* ------------------------------------------------------------------- */
 /* 1299px */

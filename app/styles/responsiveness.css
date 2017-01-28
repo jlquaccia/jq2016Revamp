@@ -313,13 +313,13 @@
     border: 2px solid #fff;
   }
 
-  #work .item:hover img {
+  /*#work .item:hover img {
     display: none;
   }
 
   #work .item img {
     display: none;
-  }
+  }*/
 
   .button-cont .hover-overflow {
     display: none;
@@ -374,5 +374,13 @@
   .flash_message {
     left: 5px;
     top: 115px;
+  }
+
+  #projects img.mobile {
+    display: block;
+  }
+
+  #projects img.desktop {
+    display: none;
   }
 }
