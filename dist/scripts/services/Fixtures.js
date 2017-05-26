@@ -7,12 +7,15 @@
           urlTitle: 'simply-put-your-way',
           title: 'Simply Put Your Way',
           imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/simply_put_your_way_1.png',
-          imageUrl2: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/simply-put-your-way3.png',
-          imageUrl3: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/simply-put-your-way5.png',
+          imageUrl2: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/simply_put_your_way_5.png',
+          imageUrl3: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/simply_put_your_way_3.png',
           mobileImage: '../assets/images/project_mobile_imgs/simply_put_your_way_1_shrunk.png',
-          projectUrl: 'http://jlquaccia.github.io/simply-put-your-way',
-          summary: 'Simply Put Your Way is a business dedicated to home organization. For some extra practice I chose to code up all of the front-end for the site. I utilized HTML, SCSS, Bootstrap and Animate.css. The entire mockup is fully responsive as well. This project was the first that I worked on where I really got to know the fundamentals of Twitter’s Bootstrap and it’s inner workings.',
-          technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Normalize', 'Animate.css', 'jQuery', 'Git', 'Github', 'Responsive Design']
+          projectUrl: 'http://www.simplyputyourway.net',
+          summary: 'Simply Put Your Way is a business dedicated to home organization and was also in need of a website revamp from a Wix page to something they could truly call their own.',
+          problem: 'Since the company\'s previous website had been built with Wix and the client held a desire to add a fully functional blog to their site, I decided to integrate as much customization functionality as possible into the new site, something the client had gotten used to witin the Wix framework.',
+          solution: 'After redesigning and constructing the core of Simply Put Your Ways\'s new website from scratch, I decided to build a blog for the client in a way that would allow them to control and use it independently without requiring any further assistance from myself once it was complete.  To achieve this I utilized MongoDB, Express, Angular and Node to build out the basic functionality of a blog and created the necessary crud resources to create, read, update and delete a blog post.  Once in place I set up user authentication to access a secret admin section of the site to only allow the client access to these crud privileges.  Lastly, in order to preserve the desired styles and formatting relative to each post the client created or updated I discovered and integreted a great plugin into the mix to help achieve what needed to be done.  Enter Text Angular.  A text editor plugin which enables a user to easily style text in a number of ways (basically the same level of editing freedom you can obtain from typing an email in Gmail).  Of course some customization for the editor was necessary to tweak things the way my client wanted but didn\'t prove to be too challenging.  Once the editor was in place I simply used Angular to render the output of the text from the editor as HTML and properly displayed each post correctly on the show pages.',
+          conclusion: 'The client was ecstatic with the final product of their newly revamped website and could not wait to show off their new site and immediately jump into creating blog posts.',
+          technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Angular', 'Animate.css', 'Pinterest API', 'Gmail API', 'jQuery', 'MongoDB', 'Express', 'Node', 'Git', 'Github', 'Responsive Design', 'Cross-Browser Compatitble']
       },
       {
           id: '2',
@@ -20,11 +23,14 @@
           title: 'Cedar Park',
           imageUrl: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/cedar_park_1.png',
           imageUrl2: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/cedar_park_2.png',
-          imageUrl3: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/cedar_park_3.png',
+          imageUrl3: 'https://s3-us-west-1.amazonaws.com/jq2016-revamp/Project+Images/cedar_park_4_shrunk.png',
           mobileImage: '../assets/images/project_mobile_imgs/cedar_park_1_shrunk.png',
-          projectUrl: 'http://jlquaccia.github.io/simply-put-your-way',
-          summary: 'Simply Put Your Way is a business dedicated to home organization. For some extra practice I chose to code up all of the front-end for the site. I utilized HTML, SCSS, Bootstrap and Animate.css. The entire mockup is fully responsive as well. This project was the first that I worked on where I really got to know the fundamentals of Twitter’s Bootstrap and it’s inner workings.',
-          technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Normalize', 'Animate.css', 'jQuery', 'Git', 'Github', 'Responsive Design']
+          projectUrl: 'http://cedarparkband.com',
+          summary: 'Cedar Park is a San Francisco based four-piece alternative punk band, who has created a unique sound blending garage punk and pop punk.',
+          problem: 'With only a social media presence already established on the internet, Cedar Park needed a website that they could call their own.',
+          solution: 'Designing everything from scratch, I used Angular to build a single page website that housed a short biography, recent photos from the bands Instagram account, upcoming tour dates and contact links to their other social media accounts and email.',
+          conclusion: 'The clients were quite pleased with the results of the final product and aim to have me build them a music player for them in the future after they record their first EP.',
+          technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Instagram API', 'Angular', 'jQuery', 'Git', 'Github', 'Responsive Design', 'Cross-Browser Compatitble']
       },
       {
           id: '3',
