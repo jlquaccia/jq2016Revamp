@@ -414,7 +414,8 @@ small.time_since_blogpost_posted.view_project {
 /* Parallax */
 
 .project_content {
-    background-image: url(http://punksjumpup.co.uk/support/skins/shop/img/bg-pattern.jpg);
+    background-color: #FFF;
+    background-image: url(/assets/images/ZenBG.png);
     box-sizing: border-box;
     min-height: 100%;
 }
